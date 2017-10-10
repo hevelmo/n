@@ -52,10 +52,18 @@
 						array( 
 							'title' => 'Nupali, A.C.',
 							'_section' => 'home',
-							'_host' => _HOST
+							'_host' => _HOST,
+							'tag_description' => 'Nupali, Trabajando juntos por un espacio en equilibrio.',
+							'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
+							'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
+							'tag_image' => 'img/logo/nupali.png'
 						)
 					);
 				})->name('home');
+			/*
+			 *		[twig template] how to help
+			 */
+				$app->get('/como-ayudar')
 			// gallery
 			// contact
 		/* end -> [Sections] gets */
