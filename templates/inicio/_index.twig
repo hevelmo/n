@@ -1,0 +1,17 @@
+{% extends 'main.twig' %}
+{% block title %}{{ title }}{% endblock %}
+{% block section %}{{ _section }}{% endblock %}
+{% block content %}
+	{# Hero Sention home #}
+	{% embed "inicio/hero_secion.twig" %}{% endembed %}
+
+	{# About us #}
+	{% embed "inicio/about.twig" %}{% endembed %}
+
+	{# Team #}
+	{% embed "inicio/team.twig" %}{% endembed %}
+
+	{# Gallery #}
+	{% embed "inicio/gallery.twig" %}{% endembed %}
+
+{% endblock content %}
