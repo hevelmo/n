@@ -17,7 +17,9 @@
 			// $log = new Logger('name');
 			// $log->pushHandler(new StreamHandler('app.log', Logger::WARNING));
 			// $log->addWarning('Oh Noes.');
-			require "vendor/autoload.php";
+			require_once "vendor/autoload.php";
+			require_once "core/environment/configSet.php";
+
 			date_default_timezone_set('America/New_York');
 		/* end -> [required] vendor -> autoload */
 	/* 
@@ -45,11 +47,19 @@
 			 *		[twig template] home
 			 */
 				$app->get('/', function() use($app){
-					$app->render('home/_index.twig');
+					$app->render(
+						'home/_index.twig',
+						array( 
+							'title' => 'Nupali, A.C.',
+							'_section' => 'home',
+							'_host' => _HOST
+						)
+					);
 				})->name('home');
 			// gallery
 			// contact
-		/* end -> [Sections] gets
+		/* end -> [Sections] gets */
+
 	/*
 	 *		[run] run app
 	 */

@@ -5,12 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	 <title>
 		{% block title %}
-			Nupali, A.C.
 		{% endblock %}
 	</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="{{ _host }}css/core.css">
 </head>
 <body>
+	<input type="hidden" name="section" id="section" value="{% block section %}{{ _section }}{% endblock %}">
 	{% block content %}
     {% endblock content %}
 </body>

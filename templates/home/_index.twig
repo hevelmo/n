@@ -1,4 +1,6 @@
 {% extends 'main.twig' %}
-{% block title %}{% endblock %}
+{% block title %}{{ title }}{% endblock %}
+{% block section %}{{ _section }}{% endblock %}
 {% block content %}
+{{ _host }}
 {% endblock content %}
