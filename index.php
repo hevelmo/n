@@ -43,6 +43,21 @@
 	 *		[Sections] gets
 	 */
 		/* */
+			/*
+			 * 		[twig template] 404
+			 */
+				$app->notFound(function() use($app) {
+					$view = $app->view();
+					$app->render(
+						'404/_index.twig',
+						array(
+							'title' => 'Página no encontrada.',
+							'_section' => 'page_not_found',
+							'_host' => _HOST
+						)
+					);
+					//echo "<pre>", print_r($view), "</pre>";
+				});
 			/*	
 			 *		[twig template] home
 			 */
@@ -63,9 +78,65 @@
 			/*
 			 *		[twig template] how to help
 			 */
-				$app->get('/como-ayudar')
-			// gallery
-			// contact
+				$app->get('/como-ayudar', function() use($app){
+					$app->render(
+						'how_to_help/_index.twig',
+						array( 
+							'title' => '¿Cómo ayudar?',
+							'_section' => 'how_to_help',
+							'_host' => _HOST,
+							'tag_description' => 'Nupali, ¿Cómo ayudar?',
+							'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
+							'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
+							'tag_image' => 'img/logo/nupali.png'
+						)
+					);
+				})->name('how_to_help');
+			/*
+			 *		[twig template] how to help -> donations and donors
+			 */
+				$app->get('/como-ayudar/donativos-y-donadores', function() use($app){
+					$app->render(
+						'how_to_help/donors/_index.twig',
+						array( 
+							'title' => '¿Cómo ayudar?',
+							'_section' => 'how_to_help',
+							'_host' => _HOST,
+							'tag_description' => 'Nupali, ¿Cómo ayudar?',
+							'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
+							'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
+							'tag_image' => 'img/logo/nupali.png'
+						)
+					);
+				})->name('donors');
+			/*
+			 *		[twig template] legal
+			 */
+				$app->get('/legal', function() use($app){
+					$app->render(
+						'legal/_index.twig',
+						array( 
+							'title' => 'Legal',
+							'_section' => 'legal',
+							'_host' => _HOST
+						)
+					);
+				})->name('legal');
+			/*
+			 *		[twig template] legal -> constitutive act
+			 */
+			/*
+			 *		[twig template] legal -> sat
+			 */
+			/*
+			 *		[twig template] legal -> ijas
+			 */
+			/*
+			 *		[twig template] legal -> bbva
+			 */
+			/*
+			 *		[twig template] legal -> deductibler receipts
+			 */
 		/* end -> [Sections] gets */
 
 	/*
