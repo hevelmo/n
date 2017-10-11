@@ -1,0 +1,71 @@
+/* ==========================================================================
+   12. CALL TO ACTION(CTA) SECTION
+========================================================================== */
+.cta .lead {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.cta .outline {
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+
+.cta .outline .lead {
+    font-size: 23px;
+    line-height: 29px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.cta .outline .btn-md {
+    font-size: 18px;
+    padding: 18px 40px;
+    margin-bottom: 0;
+}
+
+.cta .small {
+    font-size: 15px;
+}
+
+.cta .outline.bg-grey {
+    border: 1px solid #e9f0f3;
+}
+
+.cta .outline.no-border {
+    border: none;
+    padding: 20px 30px;
+}
+
+.cta .single-line p.lead {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.cta .cta-box {
+    padding: 15px;
+    margin: 20px auto 10px;
+    background-color: #EFF1F4;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.cta .cta-box a {
+    width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.cta .cta-arrow {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.cta .info {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0;
+}

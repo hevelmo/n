@@ -1,0 +1,217 @@
+/* ==========================================================================
+   16. SOCIAL WIDGETS SECTION
+========================================================================== */
+/* Share Widget */
+a.share-block {
+    display: block;
+    height: 160px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #dedcd7;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    margin: 10px auto;
+    color: #919191;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.share-color a.share-block {
+    border: none;
+    color: #fff;
+}
+
+a.share {
+    color: #919191;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.share-block i, .share i {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.share-block:hover {
+    color: #fff;
+}
+
+.share-color .share-block:hover {
+    -webkit-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+.share-block.twt:hover,
+.share-color .share-block.twt {
+    background-color: #32b6e6;
+}
+
+.share-block.fb:hover,
+.share-color .share-block.fb {
+    background-color: #6e88c6;
+}
+
+.share-block.gp:hover,
+.share-color .share-block.gp {
+    background-color: #e47365;
+}
+
+.share.twt:hover {
+    color: #32b6e6;
+}
+
+.share.fb:hover {
+    color: #6e88c6;
+}
+
+.share.gp:hover {
+    color: #e47365;
+}
+
+/* Twitter Widget */
+.twitter-header i {
+    font-size: 70px;
+    color: #32b6e6;
+}
+
+.twitter-header p{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.twitter-header {
+    margin-bottom: 30px;
+}
+
+.twitter-feed ul {
+    padding-left: 0;
+}
+
+.twitter-feed .tweet {
+    font-size: 23px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.twitter-feed .tweet img{
+    display: none;
+}
+
+.twitter-feed .timePosted a {
+    opacity: 0.7;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    color: #69696E;
+}
+
+.twt-white .twitter-feed .tweet,
+.twt-white .twitter-feed .tweet a,
+.twt-white .twitter-feed .timePosted a {
+    color: #fff !important;
+}
+
+.twt-white .twitter-feed .tweet a,
+.twt-white .twitter-feed .timePosted a {
+    font-weight: 900;
+    opacity: 1;
+}
+
+.twt-line i {
+    font-size: 40px;
+    color: #32b6e6;
+}
+
+.twt-line .twitter-feed .tweet {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.twt-line .twitter-feed p.timePosted {
+    margin-bottom: 0;
+}
+
+.twt-line .twitter-feed .timePosted a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #69696E;
+}
+
+/* Instagram Widget */
+.insta-grid .instagram-feed,
+.insta-col .instagram-feed,
+.insta-line .instagram-feed {
+    overflow: hidden;
+    position: relative;
+}
+
+.insta-grid .instagram-feed ul,
+.insta-col .instagram-feed ul,
+.insta-line .instagram-feed ul {
+    padding: 0;
+}
+
+.insta-grid .instagram-feed li,
+.insta-col .instagram-feed li,
+.insta-line .instagram-feed li {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.insta-col .instagram-feed li {
+    width: 33.3333%;
+}
+
+.insta-grid .instagram-feed li:hover,
+.insta-col .instagram-feed li:hover,
+.insta-line .instagram-feed li:hover {
+    opacity: 0.9;
+}
+
+.insta-grid .instagram-feed li img,
+.insta-col .instagram-feed li img,
+.insta-line .instagram-feed li img{
+    width: 100%;
+}
+
+.insta-grid .instagram-feed li:nth-of-type(n+11) {
+    display: none;
+}
+
+.insta-col .instagram-feed li:nth-of-type(n+7) {
+    display: none;
+}
+
+.insta-line .instagram-feed li:nth-of-type(n+6) {
+    display: none;
+}
+
+.insta-col .instagram-title {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.insta-line .insta-square {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.insta-line .insta-square i{
+    font-size: 50px;
+}

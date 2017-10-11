@@ -1,0 +1,95 @@
+/* ==========================================================================
+   19. TEAM SECTION
+=========================================================================== */
+.team .bio {
+    font-size: 17px;
+}
+
+.team .role {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+/* Team Member */
+.team-member {
+    overflow: hidden;
+}
+
+.team-member .tm-img img{
+    opacity: 1;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.team-member:hover .tm-img img{
+    opacity: 0.7;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.team-member .tm-details {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 25px 0;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.team-member:hover .tm-details {
+    bottom: 110px;
+    border-top: 1px solid #ddd;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.team-member .tm-name {
+    display: block;
+}
+
+.team-member .tm-name .tm-job {
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.team-member .tm-info {
+    visibility: hidden;
+    margin-bottom: 0;
+}
+
+.team-member:hover .tm-info {
+    visibility: visible;
+}
+
+/* Team List */
+.team-list {
+    border: 1px solid #EFF1F4;
+}
+
+.text-white .team-list {
+    border: 1px solid #fff;
+}
+
+.team-list .tl-image img {
+    width: 200px;
+    height: 200px;
+}

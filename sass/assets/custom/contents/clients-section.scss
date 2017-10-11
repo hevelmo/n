@@ -1,0 +1,45 @@
+/* ==========================================================================
+   15. CLIENTS SECTION
+========================================================================== */
+.clients {
+    margin: 0 auto;
+}
+
+.clients img {
+    display: inline-block;
+    max-height: 128px;
+    margin: 10px 50px 0;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/*.clients img:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}*/
+
+.clients.c-grid img{
+    height: 128px;
+    margin: 20px 0 0;
+}
+
+.clients h6{
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.clients h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 900;
+}
+
+.clients p {
+    font-size: 16px;
+}

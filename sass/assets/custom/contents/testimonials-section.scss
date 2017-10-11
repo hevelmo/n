@@ -1,0 +1,95 @@
+/* ==========================================================================
+   13. TESTIMONIALS SECTION
+========================================================================== */
+.testimonials .owl-theme .owl-controls {
+    margin-top: 20px;
+}
+
+.testimonials .cite {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.testimonials .cite-info {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.testimonials .img-left .cite {
+    margin-left: 95px;
+    margin-top: 15px;
+}
+
+.testimonials .img-left .cite-info {
+    font-style: italic;
+}
+
+.testimonials .img-left figure {
+    float: left;
+    clear: both;
+    width: 95px;
+    height: 90px;
+}
+
+.testimonials .img-left blockquote p {
+    clear: both;
+}
+
+.testimonials .big-img-left blockquote p {
+    font-size: 17px;
+}
+
+.testimonials .quote-border {
+    padding: 55px 20px 30px;
+    border: 2px solid #EFF1F4;
+    border-radius: 3px;
+    position: relative;
+}
+
+.testimonials .quote-border figure{
+    position: absolute;
+    top: -50px;
+}
+
+.testimonials .quote-border p {
+    margin-bottom: 30px;
+    line-height: 21px;
+}
+
+.testimonials .quote-border .cite {
+    font-size: 17px;
+}
+
+.testimonials .quote-border .cite-info {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.testimonials .big-quote i {
+    font-size: 45px;
+}
+
+.testimonials .big-quote p {
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.testimonials .big-quote .cite {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.testimonials .big-quote .cite-info{
+    font-size: 15px;
+    text-transform: none;
+}
+
+.testimonials-twitter .twitter-row {
+    margin-top: 10px;
+}
+
+.testimonials-right p {
+    font-size: 18px;
+}

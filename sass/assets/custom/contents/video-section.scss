@@ -1,0 +1,28 @@
+
+/* ==========================================================================
+   14. VIDEO SECTION
+========================================================================== */
+.bg-popup i{
+    color: #fff;
+    font-size: 100px;
+}
+
+.bg-popup i:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.video h4 {
+    margin-bottom: 15px;
+}
+
+.video .popup-button {
+    top: 37%;
+    left: 37%;
+}
+
+.video .popup-button.sm-popup {
+    top: 30%;
+    left: 34%;
+}

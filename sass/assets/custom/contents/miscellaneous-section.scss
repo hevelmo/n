@@ -1,0 +1,297 @@
+/* ==========================================================================
+   21. MISCELLANEOUS SECTION
+=========================================================================== */
+.faq {
+    padding: 30px 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.faq h5 {
+    font-weight: 900;
+}
+
+.faq-item h5 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* event schedule */
+.schedule .panel-heading {
+    background-color: transparent;
+    border-color: #ddd;
+}
+
+.schedule .panel-title a {
+    color: #69696E;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.schedule .panel-title .talk {
+    display: block;
+    opacity: 0.7;
+    line-height: 18px;
+}
+
+.schedule .panel-body img {
+    float:left;
+    margin-right: 20px;
+}
+
+.schedule .panel-body h6 {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.schedule .panel-body p {
+    font-size: 14px;
+}
+
+/* countdown timer */
+.countdown .timer {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.countdown .timer>div {
+    font-size: 80px;
+    line-height: 84px;
+    font-weight: 700;
+}
+
+.funfacts i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.funfacts .counter {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.funfacts .text {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.funfacts .counter-left {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.funfacts .counter-left i {
+    float: left;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.funfacts .counter-left .counter {
+    display: inline;
+}
+
+/* elearning path */
+.path {
+    height: 350px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+}
+
+.path h5 {
+    font-size: 19px;
+}
+
+.path .btn-ghost {
+    font-size: 13px;
+}
+
+.course-level .level {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius:50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    margin-right: 3px;
+}
+
+.course-level .level.active {
+    background-color: #fff;
+}
+
+.course-level p {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* timeline */
+.timeline {
+  border-left: 4px solid #fff;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+}
+
+.timeline .event {
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -217.5px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  content: attr(data-date);
+  text-align: right;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #fff;
+  left: -57.85px;
+  background: #fff;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+.timeline-tabs .nav-tabs {
+    border-bottom: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.timeline-tabs .nav-tabs>li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.timeline-tabs .nav-tabs>li>a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 20px 50px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    opacity: 0.9;
+}
+
+.timeline-tabs .nav-tabs>li>a:hover,
+.timeline-tabs .nav-tabs>li.active>a {
+    background-color: #fff;
+    color: #69696E;
+    opacity: 1;
+}
+
+/* timetable */
+.timetable .nav-tabs {
+    border-bottom: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.timetable .nav-tabs>li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.timetable .nav-tabs>li>a {
+    color: #69696E;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 18px 30px;
+    border: none;
+    opacity: 0.8;
+}
+
+.timetable .nav-tabs>li>a:hover {
+    border-radius: 4px;
+    border: none;
+}
+
+.timetable .nav-tabs>li.active>a,
+.timetable .nav-tabs>li.active>a:focus,
+.timetable .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #eee;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+}
+
+.timetable thead>tr>th {
+    text-align: center;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 900;
+}
+
+.timetable tbody>tr>td {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.timetable tbody>tr>td>a>i {
+    font-size: 22px;
+    vertical-align: top;
+    color: #69696E;
+}
+
+.timetable tbody>tr>td>a:hover>i {
+    transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+}
+
+.timetable tbody>tr>td:first-child,
+.timetable tbody>tr>td:last-child {
+    font-weight: 900;
+    font-size: 15px;
+}

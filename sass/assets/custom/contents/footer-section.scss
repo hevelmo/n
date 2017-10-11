@@ -1,0 +1,112 @@
+/* ==========================================================================
+   24. FOOTER SECTION
+=========================================================================== */
+.footer p, .footer a {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.footer a {
+    color: #69696E;
+}
+
+.footer ul {
+    padding-left:0;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer.f1 .footer-social {
+    float: right;
+}
+
+.footer.f1 .footer-social i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer.f2 .footer-links {
+    text-align: right;
+}
+
+.footer.f2 .footer-links li>a,
+.footer.f2 .footer-social li>a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer.f2 .footer-social i{
+    font-size: 20px;
+}
+
+.footer.f2 .footer-links i{
+    margin-right: 5px;
+}
+
+.footer.f4 .footer-desc p{
+    font-weight: 400;
+}
+
+.footer.f5 .footer-links img {
+    max-height: 35px;
+    margin-right: 50px;
+    display: inline-block;
+    position:relative;
+    bottom: 2px;
+}
+
+.footer.f5 .footer-links p {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer.f5 .footer-links a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.footer.f6 .footer-links li {
+    display:block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer.f7 .contacts,
+.footer.f7 .about {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.footer.f7 .contacts i{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer.f7 .contacts h5 {
+    font-size: 17px;
+}
+
+.footer.f7 .about .logo {
+    border-right: 2px solid #eeeeee;
+    padding-right: 30px;
+}
+
+.footer.f7 .about .newsletter {
+    padding-left: 30px;
+}
+
+.footer.f7 .links ul>li>a {
+    margin-right: 15px;
+    font-weight: 900;
+    opacity: 0.9;
+}
