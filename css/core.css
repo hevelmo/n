@@ -12418,7 +12418,7 @@ a.btn-app {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: #439FE0 url("../images/top-arrow.svg") no-repeat center 50%;
+  background: #439FE0 url("../img/top-arrow.svg") no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -15606,8 +15606,8 @@ input.toggle-round-flat:checked + label:after {
 
 @font-face {
   font-family: 'iconfont';
-  src: url("../../../fonts/iconfont.eot?9q8fxx");
-  src: url("../../../fonts/iconfont.eot?9q8fxx#iefix") format("embedded-opentype"), url("../../../fonts/iconfont.ttf?9q8fxx") format("truetype"), url("../../../fonts/iconfont.woff?9q8fxx") format("woff"), url("../../../fonts/iconfont.svg?9q8fxx#iconfont") format("svg");
+  src: url("../fonts/iconfont.eot?9q8fxx");
+  src: url("../fonts/iconfont.eot?9q8fxx#iefix") format("embedded-opentype"), url("../fonts/iconfont.ttf?9q8fxx") format("truetype"), url("../fonts/iconfont.woff?9q8fxx") format("woff"), url("../fonts/iconfont.svg?9q8fxx#iconfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 
