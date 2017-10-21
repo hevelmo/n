@@ -27,10 +27,14 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 {#- Menu Links #}
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#inicio" class="smooth-scroll">Inicio</a></li>
+                    <li>
+                        <a href="{{ _host }}" class="smooth-scroll">
+                            <i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i> Inicio
+                        </a>
+                    </li>
                     <li class="dropdown">
                         <a href="#nosotros" class="smooth-scroll"{# id="dLabel" data-toggle="dropdown" data-target="#" #}>
-                        Nosotros {# <span class="caret"></span> #}
+                            <i class="fa fa-users fa-fw fa-lg" aria-hidden="true"></i> Nosotros {# <span class="caret"></span> #}
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
@@ -52,7 +56,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="{{ _host }}proyectos" id="dLabel" data-toggle="dropdown" data-target="#">
-                        Proyectos <span class="caret"></span>
+                            <i class="fa fa-object-group fa-fw fa-lg" aria-hidden="true"></i> Proyectos <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
@@ -65,7 +69,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="{{ _host }}logros" id="dLabel" data-toggle="dropdown" data-target="#">
-                        Logros <span class="caret"></span>
+                            <i class="fa fa-check-square-o fa-fw fa-lg" aria-hidden="true"></i> Logros <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
@@ -78,7 +82,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#galeria" class="smooth-scroll" id="dLabel" data-toggle="dropdown" data-target="#">
-                        Galerías <span class="caret"></span>
+                            <i class="fa fa-picture-o fa-fw fa-lg" aria-hidden="true"></i>  Galerías <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
@@ -101,10 +105,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="{{ _host }}noticias" class="smooth-scroll">Noticias</a></li>
+                    <li>
+                        <a href="{{ _host }}noticias" class="smooth-scroll">
+                            <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> Noticias
+                        </a>
+                    </li>
                     <li class="dropdown">
                         <a href="{{ _host }}como-ayudar" id="dLabel" data-toggle="dropdown" data-target="#">
-                        ¿Cómo Ayudar? <span class="caret"></span>
+                            <i class="fa fa-question-circle fa-fw fa-lg" aria-hidden="true"></i> ¿Cómo Ayudar? <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
@@ -119,7 +127,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="{{ _host }}contacto" class="smooth-scroll">Contacto</a></li>
+                    <li>
+                        <a href="{{ _host }}contacto" class="smooth-scroll">
+                            <i class="fa fa-envelope-o fa-fw fa-lg" aria-hidden="true"></i> Contacto
+                        </a>
+                    </li>
                 </ul>{#- /End Menu Links #}
             </div>{#- /End Navbar Collapse #}
 

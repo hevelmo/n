@@ -137,6 +137,16 @@
     text-align: center;
 }
 
+/* main */
+.navbar.bg-transparent .logo-white, .navbar.bg-transparent.top-nav-collapse .logo-black {
+    width: 20%;
+}
+.navbar-brand.img-size > img {
+    float: left;
+    width: 120px;
+}
+
+
 /**
  * Table of Contents:
  *

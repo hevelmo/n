@@ -57,11 +57,10 @@
 	            <!-- FAVICON  -->
 	        #}
 	    <head>
-		<body data-spy="scroll" data-target="#main-navbar">
+		<body data-spy="scroll" data-target="#main-navbar" id="page">
 
-	        {# loader 
+	        {# loader #}
 			{% embed "assets/loader.twig" %}{% endembed %}
-			#}
 
 	        <div class="main-container" id="page">
 
@@ -72,14 +71,14 @@
 
 				{# Container #}
 				{% block content %}{% endblock content %}
-				
+
 				{# footer #}
 				{% embed "assets/footer.twig" %}{% endembed %}
 
          	</div>{# /End Main Container #}
 
          	{# Back to Top Button #}
-        	<a href="#" class="top" style="background-color:#439FE0;">Top</a>
+        	<a href="#" class="top" style="background-color:#00b1e8;">Top</a>
 
         	{# =========================
 	             SCRIPTS
