@@ -2,6 +2,8 @@ $(document).ready(function() {
 
 "use strict";
 
+$('.venobox').venobox();
+
 
 /* =================================
    LOADER
