@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 "use strict";
 
-$('.venobox').venobox();
+//$('.venobox').venobox();
 
 
 /* =================================
