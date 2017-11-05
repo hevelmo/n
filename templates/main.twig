@@ -57,7 +57,7 @@
 	            <!-- FAVICON  -->
 	        #}
 	    <head>
-		<body data-spy="scroll" data-target="#main-navbar" id="page">
+		<body data-spy="scroll" data-target="#main-navbar" class="nupali" data-inclusion="Bienvenido a la página de Nupali.">
 
 	        {# loader #}
 			{% embed "assets/loader.twig" %}{% endembed %}
@@ -98,7 +98,18 @@
 	        <script src="{{ _host }}lib/assets/plugins/picker.js"></script>
 	        <script src="{{ _host }}lib/assets/plugins/picker.date.js"></script>
 	        <script src="{{ _host }}lib/assets/plugins/venobox.js"></script>
+	        <script src="{{ _host }}lib/assets/plugins/moment.js"></script>
+	        <script src="{{ _host }}lib/assets/plugins/artyom.window.js"></script>
+	        <script src="{{ _host }}lib/assets/plugins/alertify.js"></script>
 	        {# Custom Script #}
+	        {#
+	    	<!--solely for development-->
+	        <script src="{{ _host }}js/min/core.min.js"></script>
+	        #}
+	        <!--solely foy production-->
+	        <script src="{{ _host }}js/assets/model.js"></script>
+	        <script src="{{ _host }}js/assets/method.js"></script>
+	        <script src="{{ _host }}js/assets/main.js"></script>
 	        <script src="{{ _host }}js/custom.js"></script>
 
 		</body>

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'assets/drophover';
 @import 'assets/bootstrap/bootstrap';
 @import 'assets/bootstrap/bootstrap-theme';
 @import 'assets/animate';
@@ -32,3 +33,6 @@
 
 @import "assets/lightbox";
 @import "assets/venobox";
+
+@import "assets/alertify/alertify";
+@import "assets/alertify/default";
