@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var inc;
+    inc = 'nav__inc_';
     window.artyom  = new Artyom();
     artyom.initialize({
         continuous: false,
@@ -8,24 +10,27 @@ $(document).ready(function() {
         debug: true
     });
 
-    var $inc = 'nav__inc_';
-
-    $( '.' + $inc + 'image' ).mouseenter(function() {
-        el = '.' + $inc + 'image';
-        el_class = $(el).data('inclusion');
-
-        artyom.say(el_class);
-        console.log(el_class);
-        alertify.notify(el_class);
+    $(window).on('load', function() {
     });
-    $( '.' + $inc + 'inicio' ).mouseenter(function() {
-        el = '.' + $inc + 'inicio';
-        el_class = $(el).data('inclusion');
-
-        artyom.say(el_class);
-        console.log(el_class);
-        alertify.notify(el_class);
+    $('html').one('mouseenter', '.nupali', function() {
+        getData('.nupali');
     });
+    getData('image');
+    getData('inicio');
+    function getData(element) {
+        $( '.' + inc + element ).mouseenter(function() {
+            el = '.' + inc + element;
+            el_class = $(el).data('inclusion');
+
+            artyom.say(el_class);
+            console.log(el_class);
+            alertify.notify(el_class);
+        });
+    }
+
+
+
+    /*
     $( '.' + $inc + 'nosotros' ).mouseenter(function() {
         el = '.' + $inc + 'nosotros';
         el_class = $(el).data('inclusion');
@@ -102,5 +107,6 @@ $(document).ready(function() {
         console.log(el_class);
         alertify.notify(el_class);
     });
+    */
 
 });
