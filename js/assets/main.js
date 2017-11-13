@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /*
     var inc;
     inc = 'nav__inc_';
     window.artyom  = new Artyom();
@@ -27,6 +28,7 @@ $(document).ready(function() {
             alertify.notify(el_class);
         });
     }
+    */
 
 
 
