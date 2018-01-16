@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MonaKo';
+    src: url('../fonts/monako/MonaKo.eot');
+    src: url('../fonts/monako/MonaKo.eot') format('embedded-opentype'),
+         url('../fonts/monako/MonaKo.woff2') format('woff2'),
+         url('../fonts/monako/MonaKo.woff') format('woff'),
+         url('../fonts/monako/MonaKo.ttf') format('truetype'),
+         url('../fonts/monako/MonaKo.svg#MonaKo') format('svg');
+}
+.monako {
+    font-family: 'Monako';
+}
