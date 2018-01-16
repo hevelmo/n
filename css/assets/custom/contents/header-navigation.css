@@ -27,7 +27,8 @@
   opacity: 0.8;
   padding: 9px 13px;
   border-radius: 5px;
-  margin-right: 2px; }
+  margin-right: 2px;
+  letter-spacing: 1px; }
 
 .navbar-nav > li > a:focus {
   background-color: transparent; }
@@ -230,15 +231,18 @@
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
-  background-color: #eee;
-  border-color: #E8E8E8; }
+  background-color: #00a704;
+  /*border-color: #E8E8E8;*/
+  color: #fff !important; }
 
-.bg-transparent .nav .open > a,
-.bg-transparent .nav .open > a:focus,
-.bg-transparent .nav .open > a:hover {
-  background-color: transparent;
-  border-color: transparent; }
-
+/*
+.bg-transparent .nav .open>a,
+.bg-transparent .nav .open>a:focus,
+.bg-transparent .nav .open>a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+*/
 .dropdown-menu > li > a {
   color: #404B55;
   font-size: 15px;
