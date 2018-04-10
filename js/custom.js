@@ -131,7 +131,7 @@ $(window).on('click',function() {
 /* ===========================================================
    VIDEO BACKGROUND
 ============================================================== */
-$('.video-play').vide("img/video/video", {
+$('.video-play').vide("img/video/coibri", {
     volume: 1,
     playbackRate: 1,
     muted: true,
