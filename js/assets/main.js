@@ -1,7 +1,8 @@
 $(document).ready(function() {
     /*
-    var inc;
-    inc = 'nav__inc_';
+    */
+    var $inc;
+    $inc = 'nav__inc_';
     window.artyom  = new Artyom();
     artyom.initialize({
         continuous: false,
@@ -19,8 +20,8 @@ $(document).ready(function() {
     getData('image');
     getData('inicio');
     function getData(element) {
-        $( '.' + inc + element ).mouseenter(function() {
-            el = '.' + inc + element;
+        $( '.' + $inc + element ).mouseenter(function() {
+            el = '.' + $inc + element;
             el_class = $(el).data('inclusion');
 
             artyom.say(el_class);
@@ -28,11 +29,9 @@ $(document).ready(function() {
             alertify.notify(el_class);
         });
     }
-    */
 
 
 
-    /*
     $( '.' + $inc + 'nosotros' ).mouseenter(function() {
         el = '.' + $inc + 'nosotros';
         el_class = $(el).data('inclusion');
@@ -109,6 +108,7 @@ $(document).ready(function() {
         console.log(el_class);
         alertify.notify(el_class);
     });
+    /*
     */
 
 });

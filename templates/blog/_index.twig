@@ -1,7 +1,10 @@
 {% extends 'main.twig' %}
 {% block title %}{{ title }}{% endblock %}
 {% block section %}{{ _section }}{% endblock %}
+{% block header_nav_container %}
+    {% embed "assets/header-section.twig" %}{% endembed %}
+{% endblock %}
 {% block content %}
 	{# Page Header #}
 	{% embed "assets/page-header.twig" %}{% endembed %}
-{% endblock content %} 
+{% endblock content %}

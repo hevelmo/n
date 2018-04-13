@@ -15,14 +15,14 @@ $(window).on('load', function() {
     $(".loader-inner").fadeOut();
     // will fade out the whole DIV that covers the website.
     $(".loader").fadeOut("slow");
-    /*$('html').one('mouseenter', '.nupali', function() {
+    $('html').one('mouseenter', '.nupali', function() {
         var el = 'body.nupali';
         var el_class = $(el).data('inclusion');
 
         artyom.say(el_class);
         console.log(el_class);
         alertify.notify(el_class);
-    });*/
+    });
 
 });
 

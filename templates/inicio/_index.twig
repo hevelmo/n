@@ -1,6 +1,9 @@
 {% extends 'main.twig' %}
 {% block title %}{{ title }}{% endblock %}
 {% block section %}{{ _section }}{% endblock %}
+{% block header_nav_container %}
+    {% embed "assets/header.twig" %}{% endembed %}
+{% endblock %}
 {% block content %}
 	{# Hero Sention home #}
 	{% embed "inicio/hero_secion.twig" %}{% endembed %}

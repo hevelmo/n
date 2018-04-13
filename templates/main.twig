@@ -67,7 +67,7 @@
 				<input type="hidden" name="section" id="section" value="{% block section %}{{ _section }}{% endblock %}">
 
 				{# header nav #}
-				{% embed "assets/header.twig" %}{% endembed %}
+				{% block header_nav_container %}{% endblock %}
 
 				{# Container #}
 				{% block content %}{% endblock content %}
@@ -111,6 +111,8 @@
 	        <script src="{{ _host }}js/assets/method.js"></script>
 	        <script src="{{ _host }}js/assets/main.js"></script>
 	        <script src="{{ _host }}js/custom.js"></script>
+	        <script>
+	        </script>
 
 		</body>
 	</html>

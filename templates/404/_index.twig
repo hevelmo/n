@@ -1,6 +1,9 @@
 {% extends 'main.twig' %}
 {% block title %}{{ title }}{% endblock %}
 {% block section %}{{ _section }}{% endblock %}
+{% block header_nav_container %}
+    {% embed "assets/header-section.twig" %}{% endembed %}
+{% endblock %}
 {% block content %}
 	<a href="{{ _host }}" title="">Home</a>
 	Página no encontrada.
