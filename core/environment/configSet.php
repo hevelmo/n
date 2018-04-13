@@ -1,7 +1,7 @@
 <?php
 $devServerList = array("127.0.0.1","::1","192.168.0.102","localhost");
 $folderDev = "n";
-$ip_local = ":8888";
+//$ip_local = ":8888";
 
 if(!in_array($_SERVER['SERVER_NAME'], $devServerList)){
     $urlHost  = isset($_SERVER['HTTPS']) ? 'http://' : 'http://';
