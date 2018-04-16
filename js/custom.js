@@ -134,7 +134,7 @@ $(window).on('click',function() {
 /* ===========================================================
    VIDEO BACKGROUND
 ============================================================== */
-$('.video-play').vide("img/video/coibri", {
+$('.video-play').vide("img/video/colibri", {
     volume: 1,
     playbackRate: 1,
     muted: true,
