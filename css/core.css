@@ -6894,8 +6894,8 @@ fieldset[disabled] .btn-danger.active {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -6920,8 +6920,8 @@ fieldset[disabled] .btn-danger.active {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -20845,6 +20845,105 @@ i {
 
 .monako {
   font-family: 'Monako'; }
+
+.fullscreen-element {
+  height: 100vh !important; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.error-page {
+  /*background: #0054a6 !important;*/
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.error-page i {
+  font-size: 420px;
+  color: rgba(180, 180, 180, 0.39);
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+  -moz-animation: float 40s linear infinite alternate;
+  -webkit-animation: float 40s linear infinite alternate;
+  animation: float 40s linear infinite alternate;
+  left: 0;
+  top: 100%; }
+
+.error-page a i.no-float {
+  position: relative !important;
+  font-size: 1em;
+  color: #FFFFFF !important;
+  opacity: 1;
+  z-index: 1;
+  -moz-animation: none;
+  -webkit-animation: none;
+  animation: none; }
+
+.error-page img {
+  position: relative;
+  width: 50%; }
+
+.error-page h1 {
+  font-weight: 300;
+  margin-bottom: 16px;
+  padding: 0 135px; }
+
+.error-page p {
+  margin-bottom: 32px !important; }
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    transform: translate3d(0px, 0px, 0px) rotate(0deg); }
+  25% {
+    -webkit-transform: translate3d(300px, -200px, 0px) rotate(90deg);
+    transform: translate3d(300px, -200px, 0px) rotate(90deg); }
+  50% {
+    -webkit-transform: translate3d(500px, -500px, 0px) rotate(180deg);
+    transform: translate3d(500px, -500px, 0px) rotate(180deg); }
+  75% {
+    -webkit-transform: translate3d(750px, -900px, 0px) rotate(275deg);
+    transform: translate3d(750px, -900px, 0px) rotate(275deg); }
+  100% {
+    -webkit-transform: translate3d(1100px, -1200px, 0px) rotate(360deg);
+    transform: translate3d(1100px, -1200px, 0px) rotate(360deg); } }
+
+@-moz-keyframes float {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg); }
+  25% {
+    transform: translate3d(300px, -200px, 0px) rotate(90deg); }
+  50% {
+    transform: translate3d(500px, -500px, 0px) rotate(180deg); }
+  75% {
+    transform: translate3d(750px, -900px, 0px) rotate(275deg); }
+  100% {
+    transform: translate3d(1100px, -1200px, 0px) rotate(360deg); } }
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    transform: translate3d(0px, 0px, 0px) rotate(0deg); }
+  25% {
+    -webkit-transform: translate3d(300px, -200px, 0px) rotate(90deg);
+    transform: translate3d(300px, -200px, 0px) rotate(90deg); }
+  50% {
+    -webkit-transform: translate3d(500px, -500px, 0px) rotate(180deg);
+    transform: translate3d(500px, -500px, 0px) rotate(180deg); }
+  75% {
+    -webkit-transform: translate3d(750px, -900px, 0px) rotate(275deg);
+    transform: translate3d(750px, -900px, 0px) rotate(275deg); }
+  100% {
+    -webkit-transform: translate3d(1100px, -1200px, 0px) rotate(360deg);
+    transform: translate3d(1100px, -1200px, 0px) rotate(360deg); } }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
