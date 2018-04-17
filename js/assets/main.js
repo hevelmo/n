@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /*
     */
-    var $inc;
+    /*var $inc;
     $inc = 'nav__inc_';
     window.artyom  = new Artyom();
     artyom.initialize({
@@ -29,9 +29,10 @@ $(document).ready(function() {
             alertify.notify(el_class);
         });
     }
+    */
 
 
-
+    /*
     $( '.' + $inc + 'nosotros' ).mouseenter(function() {
         el = '.' + $inc + 'nosotros';
         el_class = $(el).data('inclusion');
@@ -108,6 +109,7 @@ $(document).ready(function() {
         console.log(el_class);
         alertify.notify(el_class);
     });
+    */
     /*
     */
 
