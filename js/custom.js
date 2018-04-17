@@ -15,7 +15,10 @@ $(window).on('load', function() {
     $(".loader-inner").fadeOut();
     // will fade out the whole DIV that covers the website.
     $(".loader").fadeOut("slow");
+
+    /*
     $('html').one('mouseenter', '.nupali', function() {
+        console.log("artyom say");
         var el = 'body.nupali';
         var el_class = $(el).data('inclusion');
 
@@ -23,7 +26,7 @@ $(window).on('load', function() {
         console.log(el_class);
         alertify.notify(el_class);
     });
-
+    */
 });
 
 
@@ -131,7 +134,7 @@ $(window).on('click',function() {
 /* ===========================================================
    VIDEO BACKGROUND
 ============================================================== */
-$('.video-play').vide("img/video/coibri", {
+$('.video-play').vide("img/video/colibri", {
     volume: 1,
     playbackRate: 1,
     muted: true,

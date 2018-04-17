@@ -326,7 +326,8 @@
 			 */
 				$app->get('/noticias', function() use($app){
 					$app->render(
-						'blog/_index.twig',
+						//'blog/_index.twig',
+						'soon/_index.twig',
 						array(
 							'title' => 'Noticias',
 							'_section' => 'blog',
