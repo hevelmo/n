@@ -1,4 +1,14 @@
 $(document).ready(function() {
+
+    var gallery_slider = $('#gallery').bxSlider({
+        pager: false,
+        controls: false,
+        minSlides: 5,
+        maxSlides: 13,
+        slideWidth: 235,
+        ticker: true,
+        speed: 90000
+    });
     /*
     */
     /*var $inc;
