@@ -21118,6 +21118,90 @@ i {
   font-size: .85em;
   padding: 10px; }
 
+/* ==== 10) Team ==== */
+#team {
+  padding-bottom: 60px;
+  padding-top: 60px; }
+
+.section-t-title {
+  text-align: center;
+  margin-bottom: 50px; }
+
+#team .grid {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  position: relative; }
+
+#team .grid figure img {
+  position: relative;
+  display: block; }
+
+#team .grid figure figcaption {
+  color: #fff;
+  padding: 2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden; }
+
+#team .grid figure figcaption::before,
+#team .grid figure figcaption::after {
+  pointer-events: none;
+  -webkit-pointer-events: none; }
+
+#team .grid figure figcaption,
+#team .grid figure a {
+  position: absolute;
+  left: 0;
+  width: 100%; }
+
+#team .grid figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  -webkit-opacity: 0; }
+
+#team .grid figure h4 span {
+  font-weight: 800; }
+
+#team .grid figure {
+  background: none repeat scroll 0 0 #222;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+
+#team .team-social {
+  background: none repeat scroll 0 0 #ff6f40;
+  height: 99%;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  z-index: 100; }
+
+#team .team-social a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: all 0.4s linear 0s;
+  -webkit-transition: all 0.4s linear 0s;
+  -moz-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s; }
+
+#team .team-social a:hover {
+  color: #111; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
