@@ -141,7 +141,7 @@ $('.video-play').vide("img/video/colibri", {
     loop: true,
     autoplay: true,
     position: '50% 50%', // Similar to the CSS `background-position` property.
-    posterType: 'none', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
+    posterType: 'jpg', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
     resizing: true // Auto-resizing, read: https://github.com/VodkaBears/Vide#resizing
 });
 console.log("video");
