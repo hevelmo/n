@@ -143,7 +143,6 @@
 					})->name('equality-rides');
 			/*
 			 *		[twig template] achievements
-			 */
 				$app->get('/logros', function() use($app){
 					$app->render(
 						'logros/_index.twig',
@@ -159,9 +158,9 @@
 						)
 					);
 				})->name('achievements');
+			 */
 				/*
 				 *		[twig template] recognition
-				 */
 					$app->get('/logros/reconocimiento', function() use($app){
 						$app->render(
 							'logros/reconocimiento/_index.twig',
@@ -177,9 +176,9 @@
 							)
 						);
 					})->name('recognition');
+				 */
 				/*
 				 *		[twig template] social impact
-				 */
 					$app->get('/logros/impacto-social', function() use($app){
 						$app->render(
 							'logros/impacto-social/_index.twig',
@@ -195,6 +194,7 @@
 							)
 						);
 					})->name('social-impact');
+				 */
 			/*
 			 *		[twig template] galleries
 			 */
