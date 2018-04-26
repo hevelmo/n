@@ -144,7 +144,6 @@ $('.video-play').vide("img/video/colibri", {
     posterType: 'jpg', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
     resizing: true // Auto-resizing, read: https://github.com/VodkaBears/Vide#resizing
 });
-console.log("video");
 
 
 /* ===========================================================
