@@ -216,12 +216,12 @@
 				/*
 				 *		[twig template] gallery equality rides
 				 */
-					$app->get('/galerias/paseos-por-la-igualdad', function() use($app){
+					$app->get('/galerias/asistencia-social', function() use($app){
 						$app->render(
-							'galerias/paseos-por-la-igualdad/_index.twig',
+							'galerias/asistencia-social/_index.twig',
 							array(
-								'title' => 'Paseos por la igualdad',
-								'_section' => 'gallery-equality-rides',
+								'title' => 'Asistencia Social',
+								'_section' => 'asistencia-social',
 								'_host' => _HOST,
 								'_anio' => date("o"),
 								'tag_description' => 'Nupali, Trabajando juntos por un espacio en equilibrio.',
@@ -230,7 +230,7 @@
 								'tag_image' => _HOST . 'img/logo/nupali.png'
 							)
 						);
-					})->name('gallery-equality-rides');
+					})->name('asistencia-social');
 				/*
 				 *		[twig template] gallery workshops inclusion
 				 */
