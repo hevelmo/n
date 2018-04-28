@@ -10,3 +10,6 @@
     {# Lightbox #}
     {% embed "galerias/asistencia-social/galeria.twig" %}{% endembed %}
 {% endblock content %}
+{% block initScripts %}
+    $( '.swipebox' ).swipebox();
+{% endblock %}
