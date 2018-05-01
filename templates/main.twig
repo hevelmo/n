@@ -104,6 +104,7 @@
 	        <script src="{{ _host }}lib/assets/plugins/alertify.js"></script>
 	        #}
 	        <script src="{{ _host }}lib/assets/plugins/jquery-bxslider.js"></script>
+	        <script src="{{ _host }}lib/assets/plugins/jquery.swipebox.js"></script>
 
 	        {# Custom Script #}
 	        {#
@@ -116,6 +117,7 @@
 	        <script src="{{ _host }}js/assets/main.js"></script>
 	        <script src="{{ _host }}js/custom.js"></script>
 	        <script>
+	        	{% block initScripts %}{% endblock %}
 	        </script>
 
 		</body>
