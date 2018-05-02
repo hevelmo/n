@@ -216,6 +216,42 @@
 				/*
 				 *		[twig template] gallery equality rides
 				 */
+					$app->get('/galerias/fomento-derechos-humanos', function() use($app){
+						$app->render(
+							'galerias/fomento-a-los-derechos-humanos/_index.twig',
+							array(
+								'title' => 'Fomento a los Derechos Humanos',
+								'_section' => 'fomento-derechos-humanos',
+								'_host' => _HOST,
+								'_anio' => date("o"),
+								'tag_description' => 'Nupali, Trabajando juntos por un espacio en equilibrio.',
+								'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
+								'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
+								'tag_image' => _HOST . 'img/logo/nupali.png'
+							)
+						);
+					})->name('fomento-derechos-humanos');
+				/*
+				 *		[twig template] gallery equality rides
+				 */
+					$app->get('/galerias/participacion-comunitaria', function() use($app){
+						$app->render(
+							'galerias/participacion-comunitaria/_index.twig',
+							array(
+								'title' => 'Participaciòn Comunitaria',
+								'_section' => 'participacion-comunitaria',
+								'_host' => _HOST,
+								'_anio' => date("o"),
+								'tag_description' => 'Nupali, Trabajando juntos por un espacio en equilibrio.',
+								'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
+								'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
+								'tag_image' => _HOST . 'img/logo/nupali.png'
+							)
+						);
+					})->name('participacion-comunitaria');
+				/*
+				 *		[twig template] gallery equality rides
+				 */
 					$app->get('/galerias/asistencia-social', function() use($app){
 						$app->render(
 							'galerias/asistencia-social/_index.twig',
