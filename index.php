@@ -143,6 +143,7 @@
 					})->name('equality-rides');
 			/*
 			 *		[twig template] achievements
+			 */
 				$app->get('/logros', function() use($app){
 					$app->render(
 						'logros/_index.twig',
@@ -158,7 +159,6 @@
 						)
 					);
 				})->name('achievements');
-			 */
 				/*
 				 *		[twig template] recognition
 					$app->get('/logros/reconocimiento', function() use($app){
@@ -267,6 +267,24 @@
 							)
 						);
 					})->name('asistencia-social');
+				/*
+				 *		[twig template] gallery equality rides
+				 */
+					$app->get('/galerias/recuperacion-espacios-publicos', function() use($app){
+						$app->render(
+							'galerias/recuperacion-espacios-publicos/_index.twig',
+							array(
+								'title' => 'Recuperación de espacios públicos',
+								'_section' => 'recuperacion-espacios-publicos',
+								'_host' => _HOST,
+								'_anio' => date("o"),
+								'tag_description' => 'Nupali, Trabajando juntos por un espacio en equilibrio.',
+								'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
+								'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
+								'tag_image' => _HOST . 'img/logo/nupali.png'
+							)
+						);
+					})->name('recuperacion-espacios-publicos');
 				/*
 				 *		[twig template] gallery workshops inclusion
 				 */
