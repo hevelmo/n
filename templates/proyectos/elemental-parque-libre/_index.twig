@@ -10,3 +10,6 @@
     {# Container #}
 	{% embed "proyectos/elemental-parque-libre/container.twig" %}{% endembed %}
 {% endblock content %}
+{% block initScripts %}
+    $( '.swipebox-video' ).swipebox();
+{% endblock %}

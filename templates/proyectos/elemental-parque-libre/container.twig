@@ -25,6 +25,9 @@
                     <li>Reparación de alumbrado en espacios públicos con más de 35 luminarias.</li>
                 </ul>
                 <hr>
+                {# ========================= PORTFOLIO ============================== #}
+
+
                 {# GALERIA #}
                 {# 
                     Anexar infor del proyecto, fotos, resultados y redes sociales 
@@ -38,9 +41,114 @@
                     https://www.youtube.com/watch?v=D7xDueiAzS0
                     https://www.youtube.com/watch?v=iEnk--qA7K0 
                 #}
+
                 {# Videos (YOUTUBE) #}
                 {# #elementalparquelibre @elementalparquelibre  Facebook – Instagram, Participantes, Noticias #}
             </div>
         </div>
     </div>
 </section>
+<section id="portfolio1-1" class="p-y-lg">
+    <div class="container">
+        <div class="row">
+            <div class="wrap small-width">
+                <h3 class="monako">Galeria de videos.</h3>
+                <hr>
+                <div id="try"></div>
+                <ul id="box-container">
+                    <li class="box">
+                        <a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=6O8DemP4uQ8">
+                            <img src="{{ _host }}img\assets\proyectos\elemental-parque-libre/thumb/evento-eco-artistico.jpg" alt="image">
+                            <p class="monako">Evento: Eco-Artístico</p>
+                        </a>
+                    </li>
+                    <li class="box">
+                        <a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=l4WgTajRbNQ">
+                            <img src="{{ _host }}img\assets\proyectos\elemental-parque-libre/thumb/primer-evento-elemental-parque-libre.jpg" alt="image">
+                            <p class="monako">1er Evento Elemental Parque Libre</p>
+                        </a>
+                    </li>
+                    <li class="box">
+                        <a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=D7xDueiAzS0">
+                            <img src="{{ _host }}img\assets\proyectos\elemental-parque-libre/thumb/elemental-parque-libre-mejoras.jpg" alt="image">
+                            <p class="monako">Elemental Parque Libre mejoras</p>
+                        </a>
+                    </li>
+                    <li class="box">
+                        <a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=iEnk--qA7K0">
+                            <img src="{{ _host }}img\assets\proyectos\elemental-parque-libre/thumb/resena-evento-3-mayo-jane-s-walk.jpg" alt="image">
+                            <p class="monako">Reseña del evento 3 de Mayo Jane´s Walk</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /End Container -->
+</section>
+<!-- /End Portfolio Section -->
+<style type="text/css">
+    .small-width {
+        max-width: 740px;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        max-width: 1140px;
+        width: 92%;
+    }
+
+    #box-container {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .box:nth-child(4n+1) {
+        clear: both;
+        margin-left: 0;
+    }
+    .box {
+        list-style-type: none;
+        float: left;
+        margin-bottom: 1rem;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 23%;
+    }
+    .box a {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .box a img {
+        -webkit-back-visibility: hidden;
+        display: block;
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+    body .box a  img {
+        opacity: 1 !important;
+    }
+    .box a>img {
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: opacity .2s;
+        -moz-transition: opacity .2s;
+        -ms-transition: opacity .2s;
+        -o-transition: opacity .2s;
+        transition: opacity .2s;
+    }
+    .box a img {
+        max-width: 100%;
+        height: auto;
+    }
+    .box a img {
+        border: 0;
+    }
+    .box a p {
+        font-size: 20px;
+        color: rgba(12, 165, 228, 0.6588235294117647);
+        font-weight: bold;
+        text-align: center;
+        margin: 13px auto;
+    }
+</style>
