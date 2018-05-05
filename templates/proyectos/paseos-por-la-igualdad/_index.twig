@@ -10,3 +10,7 @@
     {# Container #}
     {% embed "proyectos/paseos-por-la-igualdad/container.twig" %}{% endembed %}        
 {% endblock content %}
+{% block initScripts %}
+    $( '.swipebox' ).swipebox();
+    $( '.swipebox-video' ).swipebox();
+{% endblock %}
