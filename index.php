@@ -270,9 +270,9 @@
 				/*
 				 *		[twig template] gallery equality rides
 				 */
-					$app->get('/galerias/recuperacion-espacios-publicos', function() use($app){
+					$app->get('/galerias/recuperacion-espacio-publico', function() use($app){
 						$app->render(
-							'galerias/recuperacion-espacios-publicos/_index.twig',
+							'galerias/recuperacion-espacio-publico/_index.twig',
 							array(
 								'title' => 'Recuperación de espacios públicos',
 								'_section' => 'recuperacion-espacios-publicos',
@@ -284,7 +284,7 @@
 								'tag_image' => _HOST . 'img/logo/nupali.png'
 							)
 						);
-					})->name('recuperacion-espacios-publicos');
+					})->name('recuperacion-espacio-publico');
 				/*
 				 *		[twig template] gallery workshops inclusion
 				 */
@@ -303,24 +303,6 @@
 							)
 						);
 					})->name('gallery-workshops-inclusion');
-				/*
-				 *		[twig template] gallery public spaces recovery
-				 */
-					$app->get('/galerias/recuperacion-espacios-publicos', function() use($app){
-						$app->render(
-							'galerias/recuperacion-espacios-publicos/_index.twig',
-							array(
-								'title' => 'Recuperación espacios públicos',
-								'_section' => 'gallery-public-spaces-recovery',
-								'_host' => _HOST,
-								'_anio' => date("o"),
-								'tag_description' => 'Nupali, Trabajando juntos por un espacio en equilibrio.',
-								'tag_keywords' => 'Nupali, Nosotros, Como Ayudar, Legal, Proyectos, Ayudar, Contacto, Resultados, Noticias',
-								'tag_author' => 'Mandala Web: Heriberto Velasco Mora - Front End Development.',
-								'tag_image' => _HOST . 'img/logo/nupali.png'
-							)
-						);
-					})->name('gallery-public-spaces-recovery');
 				/*
 				 *		[twig template] gallery public spaces recovery
 				 */
