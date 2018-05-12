@@ -105,6 +105,7 @@
 	        #}
 	        <script src="{{ _host }}lib/assets/plugins/jquery-bxslider.js"></script>
 	        <script src="{{ _host }}lib/assets/plugins/jquery.swipebox.js"></script>
+	        <script src="{{ _host }}lib/assets/plugins/scrollspy.js"></script>
 
 	        {# Custom Script #}
 	        {#
@@ -118,6 +119,9 @@
 	        <script src="{{ _host }}js/custom.js"></script>
 	        <script>
 	        	{% block initScripts %}{% endblock %}
+	        	var menu;
+	        	menu = document.querySelector('.navbar-scroll-spy');
+	        	scrollSpy(menu, 1);
 	        </script>
 
 		</body>
