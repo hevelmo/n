@@ -9,6 +9,8 @@ $(document).ready(function() {
         ticker: true,
         speed: 90000
     });
+
+    
     /*
     */
     /*var $inc;
