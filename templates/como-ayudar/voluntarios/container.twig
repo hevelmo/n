@@ -56,7 +56,7 @@
                             </select>
                         </div>
                         <div class="form-group m-b-0">
-                            <button type="button" id="send-data-voluntarios" class="btn btn-blue wow pulse action-button" data-wow-iteration="2">Enviar</button>
+                            <button type="button" id="send-data-voluntarios" class="btn btn-blue wow pulse action-button" data-wow-iteration="2" onClick="VOLU.sendFromVoluntarios($('#nombre').val(), $('#correo').val(), $('#edad').val(), $('#residencia').val(), $('#gustos-pasatiempos').val(), $('#experiencia').val(), $('#horario').val(), $('#apoyo').val(), '{{ _host }}');">Enviar</button>
                         </div>
                     </form>
                 </div><!-- /End Col -->
