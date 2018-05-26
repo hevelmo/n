@@ -24,16 +24,16 @@
                 <a href="{{ _host }}" class="navbar-brand logo-white smooth-scroll img-size"><img src="{{ _host }}img/assets/logo/logo-nupali-hor.png" alt="logo" /></a>
             </div>{#- /End Navbar Header #}
 
-            <div class="collapse navbar-collapse" id="navbar-collapse">
+            <div class="collapse navbar-collapse navTop" id="navbar-collapse">
                 {#- Menu Links #}
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{ _host }}" class="smooth-scroll">
+                    <li class="active">
+                        <a href="#inicio" class="scroller smooth-scroll">
                             {# <i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i> #} Inicio
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="#nosotros" class="smooth-scroll"{# id="dLabel" data-toggle="dropdown" data-target="#" #}>
+                        <a href="#nosotros" class="scroller smooth-scroll"{# id="dLabel" data-toggle="dropdown" data-target="#" #}>
                             {# <i class="fa fa-users fa-fw fa-lg" aria-hidden="true"></i>  #}Nosotros {# <span class="caret"></span> #}
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
@@ -65,7 +65,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="{{ _host }}proyectos" id="dLabel" data-toggle="dropdown" data-target="#">
+                        <a href="#proyectos" id="dLabel" class="scroller smooth-scroll" data-toggle="dropdown" data-target="#">
                             {# <i class="fa fa-object-group fa-fw fa-lg" aria-hidden="true"></i> #} Proyectos <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
@@ -77,8 +77,13 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#logros" class="scroller smooth-scroll">
+                            {# <i class="fa fa-check-square-o fa-fw fa-lg" aria-hidden="true"></i> #} Logros
+                        </a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#galeria" class="smooth-scroll" id="dLabel" data-toggle="dropdown" data-target="#">
+                        <a href="#galeria" class="scroller smooth-scroll" id="dLabel" data-toggle="dropdown" data-target="#">
                             {# <i class="fa fa-picture-o fa-fw fa-lg" aria-hidden="true"></i> #}  Galerías <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
@@ -96,6 +101,11 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#equipo" class="scroller smooth-scroll">
+                            {# <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> #} Equipo Nupali
+                        </a>
+                    </li>
                     <!--<li>
                         <a href="{{ _host }}noticias" class="smooth-scroll">
                             {# <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> #} Noticias
@@ -107,24 +117,16 @@
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
+                                <a href="{{ _host }}como-ayudar/voluntarios">{# <i class="fa fa-users fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #} Voluntarios</a>
+                            </li>
+                            <li>
                                 <a href="{{ _host }}como-ayudar/donativos">{# <i class="fa fa-usd fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #}Donativos</a>
-                            </li>
-                            <li>
-                                <a href="{{ _host }}o-ayudar/voluntarios">{# <i class="fa fa-users fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #} Voluntarios</a>
-                            </li>
-                            <li>
-                                <a href="{{ _host }}como-ayudar/cuestionario">{# <i class="fa fa-list-ol fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #}Cuestionario
-                                </a>
                             </li>
                         </ul>
                     </li>
+                    
                     <li>
-                        <a href="{{ _host }}#equipo-nupali" class="smooth-scroll">
-                            {# <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> #} Equipo Nupali
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ _host }}contacto" class="smooth-scroll">
+                        <a href="{{ _host }}contacto" class="{#smooth-scroll#}">
                             {# <i class="fa fa-envelope-o fa-fw fa-lg" aria-hidden="true"></i> #} Contacto
                         </a>
                     </li>

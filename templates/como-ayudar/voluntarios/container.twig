@@ -1,0 +1,68 @@
+<!-- =========================
+         CONTACT SECTION
+    ============================== -->
+    <section id="contact3-1" class="p-y-lg contact bg-edit">
+        <div class="container">
+            <!-- Section Header -->
+            {# <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="section-header text-center wow fadeIn">
+                                    <h2>Ready to Get Started?</h2>
+                                    <p class="lead">Want to hire the best people around to design, develop, and turn your project into reality? Well look no further! Take your business to the next level.</p>    
+                                </div>
+                            </div>
+                        </div> #}
+
+            <div class="row c2">
+                <div class="col-md-6 col-md-offset-3">
+                    <!-- Contact Form -->
+                    <h4 class="f-w-900 m-b-md">Voluntarios</h4>
+                    <form class="form-horizontal form-action" id="form-voluntarios">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="edad" id="edad" placeholder="Edad">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="residencia" id="residencia" placeholder="Lugar de residencia">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="gustos-pasatiempos" id="gustos-pasatiempos" class="form-control" placeholder="Gustos y/o pasatiempos"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select name="experiencia" id="experiencia" class="form-control">
+                                <option>¿En qué area te gustaria apoyar?</option>
+                                <option value="Contable - Legal">Contable - Legal</option>
+                                <option value="Voluntaro">Voluntaro</option>
+                                <option value="Desarrollo de proyectos">Desarrollo de proyectos</option>
+                                <option value="Redes sociales - Promoción">Redes sociales - Promoción</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="horario" id="horario" placeholder="¿Cuándo puedes iniciar?">
+                        </div>
+                        <div class="form-group">
+                            <select name="apoyo" id="apoyo" class="form-control">
+                                <option>Formas de apoyo</option>
+                                <option value="Tiempo">Tiempo</option>
+                                <option value="Especie">Especie</option>
+                                <option value="Economico (Expedición de recibo deducible de impuestos)">Economico (Expedición de recibo deducible de impuestos)</option>
+                                <option value="Redes sociales - Promoción">Redes sociales - Promoción</option>
+                            </select>
+                        </div>
+                        <div class="form-group m-b-0">
+                            <button type="button" id="send-data-voluntarios" class="btn btn-blue wow pulse action-button" data-wow-iteration="2" onClick="VOLU.sendFromVoluntarios($('#nombre').val(), $('#correo').val(), $('#edad').val(), $('#residencia').val(), $('#gustos-pasatiempos').val(), $('#experiencia').val(), $('#horario').val(), $('#apoyo').val(), '{{ _host }}');">Enviar</button>
+                        </div>
+                    </form>
+                </div><!-- /End Col -->
+
+            </div><!-- /End Row -->
+        
+        </div><!-- /End Container -->
+    </section>   
+    <!-- /End Contact Section -->

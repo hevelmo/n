@@ -1,4 +1,4 @@
-{% extends 'main.twig' %}
+    {% extends 'main.twig' %}
 {% block title %}{{ title }}{% endblock %}
 {% block section %}{{ _section }}{% endblock %}
 {% block header_nav_container %}
@@ -10,6 +10,12 @@
 
 	{# About us #}
 	{% embed "inicio/about.twig" %}{% endembed %}
+
+    {# Proyectos #}
+    {% embed "inicio/proyectos.twig" %}{% endembed %}
+
+    {# Proyectos #}
+    {% embed "inicio/logros.twig" %}{% endembed %}
 
 	{# Gallery #}
 	{% embed "inicio/gallery.twig" %}{% endembed %}

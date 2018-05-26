@@ -63,3 +63,38 @@
 
     /* */
 /* end -> [method] artyom */
+var VOLU;
+VOLU = {};
+VOLU = (function() {
+    "use strict";
+    function sendFromVoluntarios(nombre, correo, edad, residencia, gastos_pasatiempos, experiencia, horario, apoyo, host) {
+        var _url, _loader;
+        _url = host + "core/voluntarios/send_form_voluntarios.php";
+        _loader = $('.loader');
+            
+        $.ajax({
+            type: "POST",
+            url: _url,
+            data: {nombre:nombre, correo:correo, edad:edad, residencia:residencia, gastos_pasatiempos:gastos_pasatiempos, experiencia:experiencia, horario:horario, apoyo:apoyo, host:host},
+            beforeSend: function() {
+                setTimeout(function(){
+                    //_loader.fadeIn(1000).html('<img src="'+ host + 'img/loader.gif">').delay(2000).fadeOut(1000);               
+                }, 2000);   
+            },
+            success: function(data){
+                setTimeout(function(){
+                    console.log(data);
+                    //alertify.success('Tu pregunta se ha enviado');
+                }, 8000);
+            }
+        }).done(function() {
+            setTimeout(function(){
+                $("#form_add_question")[0].reset();
+                //$('#send_add_question').addClass('disable-button');
+            }, 9000);
+        });
+    }
+    return {
+                sendFromVoluntarios : sendFromVoluntarios
+    };
+}());

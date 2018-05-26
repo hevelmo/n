@@ -330,7 +330,9 @@ img {
   color: #fff; }
 
 .modal-header {
-  padding: 0 4.555rem; }
+  padding: 0 4.555rem; 
+  border-botton: 0px solid transparent !important;
+}
 
 .modal-footer {
   top: auto;

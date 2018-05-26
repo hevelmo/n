@@ -28,44 +28,44 @@
                 {#- Menu Links #}
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="{{ _host }}" class="smooth-scroll">
+                        <a href="{{ _host }}">
                             {# <i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i> #} Inicio
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="{{ _host }}#nosotros" class="smooth-scroll"{# id="dLabel" data-toggle="dropdown" data-target="#" #}>
+                        <a href="{{ _host }}#nosotros"{# id="dLabel" data-toggle="dropdown" data-target="#" #}>
                             {# <i class="fa fa-users fa-fw fa-lg" aria-hidden="true"></i>  #}Nosotros {# <span class="caret"></span> #}
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
-                                <a href="#nosotros" class="smooth-scroll">
+                                <a href="{{ _host }}#nosotros">
                                     Misión
                                 </a>
                             </li>
                             <li>
-                                <a href="#nosotros" class="smooth-scroll">
+                                <a href="{{ _host }}#nosotros">
                                     Visión
                                 </a>
                             </li>
                             <li>
-                                <a href="#nosotros" class="smooth-scroll">
+                                <a href="{{ _host }}#nosotros">
                                     Valores
                                 </a>
                             </li>
                             <li>
-                                <a href="#nosotros" class="smooth-scroll">
+                                <a href="{{ _host }}#nosotros">
                                     Historia
                                 </a>
                             </li>
                             <li>
-                                <a href="#nosotros" class="smooth-scroll">
+                                <a href="{{ _host }}#nosotros">
                                     Crew
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="{{ _host }}proyectos" id="dLabel" data-toggle="dropdown" data-target="#">
+                        <a href="{{ _host }}#proyectos" id="dLabel" data-toggle="dropdown" data-target="#">
                             {# <i class="fa fa-object-group fa-fw fa-lg" aria-hidden="true"></i> #} Proyectos <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
@@ -78,7 +78,12 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#galeria" class="smooth-scroll" id="dLabel" data-toggle="dropdown" data-target="#">
+                        <a href="{{ _host }}#logros">
+                            {# <i class="fa fa-check-square-o fa-fw fa-lg" aria-hidden="true"></i> #} Logros
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="{{ _host }}#galeria" id="dLabel" data-toggle="dropdown" data-target="#">
                             {# <i class="fa fa-picture-o fa-fw fa-lg" aria-hidden="true"></i> #}  Galerías <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
@@ -96,8 +101,13 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="{{ _host }}#equipo">
+                            {# <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> #} Equipo Nupali
+                        </a>
+                    </li>
                     <!--<li>
-                        <a href="{{ _host }}noticias" class="smooth-scroll">
+                        <a href="{{ _host }}noticias">
                             {# <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> #} Noticias
                         </a>
                     </li>-->
@@ -107,24 +117,15 @@
                         </a>
                         <ul class="dropdown-menu multi-level" role="menu">
                             <li>
-                                <a href="{{ _host }}como-ayudar/donativos">{# <i class="fa fa-usd fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #}Donativos</a>
-                            </li>
-                            <li>
                                 <a href="{{ _host }}o-ayudar/voluntarios">{# <i class="fa fa-users fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #} Voluntarios</a>
                             </li>
                             <li>
-                                <a href="{{ _host }}como-ayudar/cuestionario">{# <i class="fa fa-list-ol fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #}Cuestionario
-                                </a>
+                                <a href="{{ _host }}como-ayudar/donativos">{# <i class="fa fa-usd fa-fw fa-lg" style="margin-right: 10px;" aria-hidden="true"></i> #}Donativos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="{{ _host }}#equipo-nupali" class="smooth-scroll">
-                            {# <i class="fa fa-newspaper-o fa-fw fa-lg" aria-hidden="true"></i> #} Equipo Nupali
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ _host }}contacto" class="smooth-scroll">
+                        <a href="{{ _host }}contacto">
                             {# <i class="fa fa-envelope-o fa-fw fa-lg" aria-hidden="true"></i> #} Contacto
                         </a>
                     </li>
