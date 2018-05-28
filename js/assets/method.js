@@ -89,7 +89,7 @@ VOLU = (function() {
             }
         }).done(function() {
             setTimeout(function(){
-                $("#form_add_question")[0].reset();
+                $("#form-voluntarios")[0].reset();
                 //$('#send_add_question').addClass('disable-button');
             }, 9000);
         });
