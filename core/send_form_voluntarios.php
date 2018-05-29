@@ -3,7 +3,7 @@
     $f_correo = $_POST['correo']:
     $f_edad = $_POST['edad']
     $f_residencia = $_POST['residencia'];
-    $f_gustos_pasatiempos = $_POST['gustos-pasatiempos'];
+    $f_gustos_pasatiempos = $_POST['gustos_pasatiempos'];
     $f_experiencia = $_POST['experiencia'];
     $f_horario = $_POST['apoyo'];
 
