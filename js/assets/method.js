@@ -69,7 +69,7 @@ VOLU = (function() {
     "use strict";
     function sendFromVoluntarios(nombre, correo, edad, residencia, gastos_pasatiempos, experiencia, horario, apoyo, host) {
         var _url, _loader;
-        _url = host + "core/send_form_voluntarios.php";
+        _url = "../core/send_form_voluntarios.php";
         console.log(_url);
         //oader = $('.loader');
             
