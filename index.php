@@ -401,7 +401,7 @@
 						$app->render(
 							'como-ayudar/donativos/_index.twig',
 							array(
-								'title' => 'Donativos',
+								'title' => '¿Cómo ayudar?',
 								'_section' => 'donations',
 								'_host' => _HOST,
 								'_anio' => date("o"),

@@ -69,14 +69,21 @@ VOLU = (function() {
     "use strict";
     function sendFromVoluntarios(nombre, correo, edad, residencia, gastos_pasatiempos, experiencia, horario, apoyo, host) {
         var _url, _loader;
+<<<<<<< HEAD
         console.log(host);
         _url = host + "core/voluntarios/send_form_voluntarios.php";
         _loader = $('.loader');
 
+=======
+        _url = "../core/send_form_voluntarios.php";
+        console.log(_url);
+        //oader = $('.loader');
+            
+>>>>>>> 8b464f321713199b9ec2477f8dddad19c9ec9b2f
         $.ajax({
             type: "POST",
             url: _url,
-            data: {nombre:nombre, correo:correo, edad:edad, residencia:residencia, gastos_pasatiempos:gastos_pasatiempos, experiencia:experiencia, horario:horario, apoyo:apoyo, host:host},
+            data: {nombre:nombre, correo:correo, edad:edad, residencia:residencia, gustos_pasatiempos:gastos_pasatiempos, experiencia:experiencia, horario:horario, apoyo:apoyo},
             beforeSend: function() {
                 setTimeout(function(){
                     //_loader.fadeIn(1000).html('<img src="'+ host + 'img/loader.gif">').delay(2000).fadeOut(1000);
