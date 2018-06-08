@@ -466,6 +466,20 @@
 						)
 					);
 				})->name('contact');
+			/*
+			 * 		[twig template] aviso de privacidad
+			 */
+				$app->get('/aviso-de-privacidad', function() use($app){
+					$app->render(
+						'aviso-de-privacidad/_index.twig',
+						array(
+							'title' => 'Aviso de privacidad',
+							'_section' => 'aviso-de-privacidad',
+							'_host' => _HOST,
+							'_anio' => date("o"),
+						)
+					);
+				})->name('aviso-de-privacidad');
 		/* end -> [Sections] gets */
 	/*
 	 *		[run] run app
