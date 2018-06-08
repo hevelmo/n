@@ -72,7 +72,7 @@ VOLU = (function() {
         console.log(host);
         _url = host + "core/voluntarios/send_form_voluntarios.php";
         _loader = $('.loader');
-        _url = "../core/send_form_voluntarios.php";
+
         console.log(_url);
         //oader = $('.loader');
         $.ajax({
