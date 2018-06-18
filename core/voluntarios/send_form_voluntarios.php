@@ -1,13 +1,15 @@
 <?php
-
-    var_dump($f_volu_nombre = $_POST["nombre"]);
-    var_dump($f_volu_correo = $_POST["correo"]);
-    var_dump($f_volu_edad = $_POST["edad"]);
-    var_dump($f_volu_residencia = $_POST["residecia"]);
-    var_dump($f_volu_gastos_pasatiempos = $_POST["gastos_pasatiempos"]);
-    var_dump($f_volu_experiencia = $_POST["experiencia"]);
-    var_dump($f_volu_horario = $_POST["horario"]);
-    var_dump($f_volu_apoyo = $_POST["apoyo"]);
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+    
+    $f_volu_nombre = $_POST["nombre"];
+    $f_volu_correo = $_POST["correo"];
+    $f_volu_edad = $_POST["edad"];
+    $f_volu_residencia = $_POST["residecia"];
+    $f_volu_gastos_pasatiempos = $_POST["gustos_pasatiempos"];
+    $f_volu_experiencia = $_POST["experiencia"];
+    $f_volu_horario = $_POST["horario"];
+    $f_volu_apoyo = $_POST["apoyo"];
 
     echo $to = "hevelmo060683@gmail.com";
     echo $subject = "Voluntarios Nupali";

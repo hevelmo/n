@@ -1,19 +1,23 @@
 <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
 
-    var_dump($f_volu_nombre = $_POST["nombre"]);
-    var_dump($f_volu_correo = $_POST["correo"]);
-    var_dump($f_volu_edad = $_POST["edad"]);
-    var_dump($f_volu_residencia = $_POST["residecia"]);
-    var_dump($f_volu_gastos_pasatiempos = $_POST["gastos_pasatiempos"]);
-    var_dump($f_volu_experiencia = $_POST["experiencia"]);
-    var_dump($f_volu_horario = $_POST["horario"]);
-    var_dump($f_volu_apoyo = $_POST["apoyo"]);
+    $encoding = "utf-8";
+    
+    $f_volu_nombre = $_POST["nombre"];
+    $f_volu_correo = $_POST["correo"];
+    $f_volu_edad = $_POST["edad"];
+    $f_volu_residencia = $_POST["residecia"];
+    $f_volu_gastos_pasatiempos = $_POST["gustos_pasatiempos"];
+    $f_volu_experiencia = $_POST["experiencia"];
+    $f_volu_horario = $_POST["horario"];
+    $f_volu_apoyo = $_POST["apoyo"];
 
-    echo $to = "hevelmo060683@gmail.com";
-    echo $subject = "Voluntarios Nupali";
+    $to = "hevelmo060683@gmail.com";
+    $subject = "Voluntarios Nupali";
 
     $anio = date("o");
-    echo $cuerpo = '<html>
+    $cuerpo = '<html>
             <head>
                 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
             </head>
@@ -89,7 +93,6 @@
                                                                 <!--[if !mso]><!-->
                                                                     <span style="font-family: Helvetica; font-weight: normal; text-align: left; display: block; word-break: break-all; padding: 0 20px;">
                                                                         <!--<![endif]-->
-                                                                        '.  .'
                                                                         <!--[if !mso]><!-->
                                                                     </span>
                                                                 <!--<![endif]-->
@@ -140,7 +143,7 @@
                                                                         <td align="center" height="45" bgcolor="#000" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 0.9); background-color: #68676b;">
                                                                             <!--[if !mso]><!-->
                                                                             <span style="font-family: Helvetica; font-weight: normal;"><!--<![endif]-->
-                                                                                <a href="mailto:'.  .'?subject=Respuesta preguntas frecuentes." style="color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;">Responder</a>
+                                                                                <a href="mailto:?subject=Respuesta preguntas frecuentes." style="color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;">Responder</a>
                                                                                 <br>
                                                                             <!--[if !mso]><!--></span><!--<![endif]-->
                                                                         </td>
@@ -273,11 +276,11 @@
         </html>';
 
     $headers = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+    $headers .= 'Content-type: text/html; ' $$encoding '' . "\r\n";
 
     $headers .= 'From: '. $f_volu_nombre .' <'. $f_volu_correo .'>' . "\r\n" . 'Reply-To: '. $f_volu_correo . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
-    echo $cuerpo;
+    ech$cuerpo;
     $success = mail($to,$subject,$cuerpo,$headers);
     if (!$success) {
         echo "\r\nMensaje no enviado. \r\n";
