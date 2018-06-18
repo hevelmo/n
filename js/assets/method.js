@@ -74,7 +74,6 @@ VOLU = (function() {
         _loader = $('.loader');
 
         console.log(_url);
-        //oader = $('.loader');
         $.ajax({
             type: "POST",
             url: _url,
@@ -98,6 +97,6 @@ VOLU = (function() {
         });
     }
     return {
-                sendFromVoluntarios : sendFromVoluntarios
+        sendFromVoluntarios : sendFromVoluntarios
     };
 }());
