@@ -1,276 +1,335 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set("display_errors", "1");
-    
-    $f_volu_nombre = $_POST["nombre"];
-    $f_volu_correo = $_POST["correo"];
-    $f_volu_edad = $_POST["edad"];
-    $f_volu_residencia = $_POST["residencia"];
-    $f_volu_gastos_pasatiempos = $_POST["gustos_pasatiempos"];
-    $f_volu_experiencia = $_POST["experiencia"];
-    $f_volu_horario = $_POST["horario"];
-    $f_volu_apoyo = $_POST["apoyo"];
+    $f_volu_nombre = htmlspecialchars($_POST["nombre"]);
+    $f_volu_correo = htmlspecialchars($_POST["correo"]);
+    $f_volu_edad = htmlspecialchars($_POST["edad"]);
+    $f_volu_residencia = htmlspecialchars($_POST["residencia"]);
+    $f_volu_gastos_pasatiempos = htmlspecialchars($_POST["gustos_pasatiempos"]);
+    $f_volu_experiencia = htmlspecialchars($_POST["experiencia"]);
+    $f_volu_horario = htmlspecialchars($_POST["horario"]);
+    $f_volu_apoyo = htmlspecialchars($_POST["apoyo"]);
+    $f_volu_host = htmlspecialchars($_POST["host"]);
 
+    //$to = "hevelmo060683@gmail.com";
     $to = "contacto@nupali.org";
     $subject = "Voluntarios Nupali";
 
-    $anio = date("o");
-    $cuerpo = "<html>
-            <head>
-                <meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;'>
-            </head>
-            <body>
-                <table width='100%' border='0' cellpadding='0' cellspacing='0' align='center' class='full2'  bgcolor='#fff' style='background-color: rgb(255, 255, 255);'>
-                    <tr>
-                        <td style='background-color: rgba(0,161,220,0.3); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: -120px -15px; background-attachment: fixed; background-repeat: no-repeat;' id='not6'>
+    $cuerpo = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'> 
+        <html xmlns:v='urn:schemas-microsoft-com:vml'>
+        <head>
 
-                            <!-- Mobile Wrapper -->
-                            <table width='100%' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' style='background: #f7f7f7;'>
-                                <tr>
-                                    <td width='100%' align='center'>
+            <!-- Define Charset -->
+            <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+            
+            <!-- Responsive Meta Tag -->
+            <meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;' />
 
-                                        <div class='sortable_inner ui-sortable'>
-                                        <!-- Space -->
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='full' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' height='50'></td>
-                                            </tr>
-                                        </table>
-                                        <!-- End Space -->
+            <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+            
+            <title>Notification 12- Responsive Email Template</title><!-- Responsive Styles and Valid Styles -->
 
-                                        <!-- Space -->
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='full' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' height='50'></td>
-                                            </tr>
-                                        </table>
-                                        <!-- End Space -->
+            <style type='text/css'>
+            
+                body{
+                    width: 100%; 
+                    background-color: #0ca6a4; 
+                    margin:0; 
+                    padding:0; 
+                    -webkit-font-smoothing: antialiased;
+                    mso-margin-top-alt:0px; mso-margin-bottom-alt:0px; mso-padding-alt: 0px 0px 0px 0px;
+                }
+                
+                p,h1,h2,h3,h4{
+                    margin-top:0;
+                    margin-bottom:0;
+                    padding-top:0;
+                    padding-bottom:0;
+                }
+                
+                span.preheader{display: none; font-size: 1px;}
+                
+                html{
+                    width: 100%; 
+                }
+                
+                table{
+                    font-size: 14px;
+                    border: 0;
+                }
+                
+                 /* ----------- responsivity ----------- */
+                @media only screen and (max-width: 640px){
+                    /*------ top header ------ */   
+                    body[yahoo] .main-header{font-size: 22px !important;}
+                    body[yahoo] .main-section-header{font-size: 25px !important;}
+                    body[yahoo] .show{display: block !important;}
+                    body[yahoo] .hide{display: none !important;}
+                    
+                    /*----- main image -------*/
+                    body[yahoo] .main-image img{width: 440px !important; height: auto !important;}
+                     
+                    /* ====== divider ====== */
+                    body[yahoo] .divider img{width: 440px !important;}
+                    body[yahoo] .align-center{text-align: center !important;}
+                    
+                    /*--------- banner ----------*/
+                    body[yahoo] .banner img{width: 440px !important; height: auto !important;}
+                    /*-------- container --------*/         
+                    body[yahoo] .container590{width: 440px !important;}
+                    body[yahoo] .container580{width: 400px !important;}
+                    body[yahoo] .half-container590{width: 200px !important;}
+                   
+                    /*-------- secions ----------*/
+                    body[yahoo] .section-item{width: 440px !important;}
+                    body[yahoo] .section-img img{width: 440px !important; height: auto !important;}        
+                }
 
-                                        <!-- Start Top -->
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#fff' style='border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: rgba(255,255,255,0.85);' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center' class='logo'>
+                @media only screen and (max-width: 479px){
+                    /*------ top header ------ */
+                    body[yahoo] .main-header{font-size: 20px !important;}
+                    
+                    /*----- main image -------*/
+                    body[yahoo] .main-image img{width: 280px !important; height: auto !important;}
+                     
+                    /* ====== divider ====== */
+                    body[yahoo] .divider{width: 280px !important;}
+                    body[yahoo] .align-center{text-align: center !important;}
+                    
+                    /*--------- banner ----------*/
+                    body[yahoo] .banner img{width: 280px !important; height: auto !important;}
+                    /*-------- container --------*/         
+                    body[yahoo] .container590{width: 280px !important;}
+                    body[yahoo] .container580{width: 260px !important;}
+                    body[yahoo] .half-container590{width: 280px !important;}
+                   
+                    /*-------- secions ----------*/
+                    body[yahoo] .section-item{width: 280px !important;}
+                    body[yahoo] .section-item-iphone{width: 280px !important;}
+                    body[yahoo] .section-img img{width: 280px !important; height: auto !important;}  
+                    body[yahoo] .section-iphone-img img{width: 280px !important; height: auto !important;}
+                    
+                    /*------- CTA -------------*/
+                    body[yahoo] .cta-btn{width: 200px !important;}
+                    
+                }
+                
+        </style>
+        </head>
 
-                                                    <!-- Header Text -->
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td width='100%' height='30'></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width='100%'><span><img src='http://ghia.com.mx/prueba_nueva/img/logo/logo-header.php' alt='. . .' width='120px'></span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width='100%' height='20'></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td width='100%' height='0'></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td valign='middle' width='100%' style='text-align: left; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(63, 67, 69); line-height: 30px; font-weight: 100;'>
-                                                                <hr style='border: 0; border-bottom: 2px solid #a7c52d; display: block; width: 100%; margin-top: 2%;'>
-                                                                <!--[if !mso]><!-->
-                                                                    <span style='font-family: Helvetica; font-weight: normal; text-align: left; display: block; word-break: break-all; padding: 0 20px;'>
-                                                                        <!--<![endif]-->
-                                                                        <!--[if !mso]><!-->
-                                                                    </span>
-                                                                <!--<![endif]-->
-                                                                <hr style='border: 0; border-bottom: 2px solid #a7c52d; display: block; width: 100%; margin-top: 2%;'>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td width='100%' height='10'></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td width='100%' height='10'></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <!-- Button Center -->
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td>
-                                                                <table border='0' cellpadding='0' cellspacing='0' align='left' width='100%'>
-                                                                    <tr>
-                                                                        <td align='center' height='45' bgcolor='#000' style='border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 0.9); background-color: #68676b;'>
-                                                                            <!--[if !mso]><!-->
-                                                                            <span style='font-family: Helvetica; font-weight: normal;'><!--<![endif]-->
-                                                                                <a href='mailto:?subject=Respuesta preguntas frecuentes.' style='color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;'>Responder</a>
-                                                                                <br>
-                                                                            <!--[if !mso]><!--></span><!--<![endif]-->
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        {# End Button Center #}
-
-                                        <!-- Button Center -->
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td>
-                                                                <table border='0' cellpadding='0' cellspacing='0' align='left' width='100%'>
-                                                                    <tr>
-                                                                        <td align='center' height='45' bgcolor='#000' style='border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 0.9); background-color: #68676b;'>
-                                                                            <!--[if !mso]><!-->
-                                                                            <span style='font-family: Helvetica; font-weight: normal;'><!--<![endif]-->
-                                                                                <a target='_blank' href='http://ghia.com.mx/prueba_nueva/admin/faqs/' style='color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;'>Gestionar pregunta</a>
-                                                                                <br>
-                                                                            <!--[if !mso]><!--></span><!--<![endif]-->
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <!-- End Button Center -->
-
-                                        <!-- Button Center -->
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td>
-                                                                <table border='0' cellpadding='0' cellspacing='0' align='left' width='100%'>
-                                                                    <tr>
-                                                                        <td align='center' height='45' bgcolor='#000' style='border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(0, 0, 0, 0.9); background-color: #ffffff;'>
-                                                                            <!--[if !mso]><!-->
-                                                                            <span style='font-family: Helvetica; font-weight: normal; font-size: 11px;'><!--<![endif]-->
-                                                                                <small><b>Nota:</b> Selecciona la pregunta, copia y pegala en gestor de preguntas frecuente.</small>
-                                                                                <br>
-                                                                            <!--[if !mso]><!--></span><!--<![endif]-->
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <!-- End Button Center -->
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'object='drag-module-small' style='background-color: rgba(255, 255, 255, 0.9);'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td width='100%' height='10'></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' bgcolor='#ffffff'style='border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: rgba(255, 255, 255, 0.9);' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' valign='middle' align='center'>
-
-                                                    <table width='540' border='0' cellpadding='0' cellspacing='0' align='center' style='text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='fullCenter2'>
-                                                        <tr>
-                                                            <td width='100%' height='10'></td>
-                                                        </tr>
-                                                    </table>
-
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='full2' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' height='30'></td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' object='drag-module-small'>
-                                            <tr>
-                                                <td valign='middle' width='100%' style='text-align: left; font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgba(0, 0, 0, 0.9); line-height: 24px; text-align: center'>
-                                                    <!--[if !mso]><!--><span style='font-family: Helvetica; font-weight: normal;'><!--<![endif]-->&copy;  GHIA PREGUNTAS FREQUENTES FAQS <!--<![endif]--></span><!--[if !mso]><!-->
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' height='30'></td>
-                                            </tr>
-                                        </table>
-
-                                        <table width='600' border='0' cellpadding='0' cellspacing='0' align='center' class='mobile2' object='drag-module-small'>
-                                            <tr>
-                                                <td width='100%' height='29'></td>
-                                            </tr>
-                                            <tr>
-                                                <td width='100%' height='1'></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </body>
+        <body yahoo='fix' leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>
+            
+            <!-- ======= main section ======= -->
+            <table border='0' width='100%' cellpadding='0' cellspacing='0' bgcolor='0ca6a4' style='background-image: url(http://themastermail.com/alerta/notif12/img/bg.png); background-size: 100% 100%; background-position: top center;' background='http://themastermail.com/alerta/notif12/img/bg.png'>
+                
+                <tr><td height='120' style='font-size: 120px; line-height: 120px;'>&nbsp;</td></tr>
+                                                    
+                <tr>
+                    <td>
+                        <table border='0' align='center' width='510' cellpadding='0' cellspacing='0' bgcolor='ffffff' class='container590 bodybg_color'>
+                            
+                            <tr><td height='30' style='font-size: 30px; line-height: 30px;'>&nbsp;</td></tr>
+                            
+                            <tr>
+                                <td>
+                                    <table border='0' align='center' width='460' cellpadding='0' cellspacing='0' bgcolor='ffffff' class='container590 bodybg_color'>
+                                        <tr>
+                                            <td>
+                                                <table border='0' width='260' align='left' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='section-item'>
+                                                    <tr>
+                                                        <td>
+                                                            <table border='0' width='100' align='left' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='hide'>
+                                                                
+                                                                <tr><td height='5' style='font-size: 5px; line-height: 5px;'>&nbsp;</td></tr>
+                                                                
+                                                                <tr>
+                                                                    <td align='left' style='color: #7e8385; font-size: 14px; font-family: 'Montserrat', sans-serif; line-height: 22px;' class='main-header title_color'>
+                                                                        <!-- ======= section text ====== -->
+                                                                        
+                                                                        <div style='line-height: 22px'> 
+                                                                            <b>VOLUNTARIOS</b>
+                                                                        </div>
+                                                                    </td>   
+                                                                </tr>
+                                                                                                        
+                                                            </table>
+                                                            
+                                                            <table border='0' width='2' align='left' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='container590'>
+                                                                <tr><td width='2' height='30' style='font-size: 30px; line-height: 30px;'></td></tr>
+                                                            </table>
+                                                            
+                                                            <table border='0' align='right' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='section-item'>
+                                                                <tr>
+                                                                    <!-- ======= logo ======= -->
+                                                                    <td align='center'>
+                                                                        <a href='http://nupali.org' style='display: block; border-style: none !important; border: 0 !important;'><img width='95' border='0' style='display: block; width: 95px;' src='http://nupali.org/img/assets/logo/logo.php' alt='Nupali A.C.' /></a>
+                                                                    </td>           
+                                                                </tr>                                                                           
+                                                            </table>
+                    
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                                <table border='0' width='2' align='left' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='container590'>
+                                                    <tr><td width='2' height='30' style='font-size: 30px; line-height: 30px;'></td></tr>
+                                                </table>
+                                                <table border='0' align='right' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='section-item'>
+                                                    <tr><td height='5' style='font-size: 5px; line-height: 5px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='center' style='color: #7e8385; font-size: 14px; font-family: 'Montserrat', sans-serif; line-height: 22px;' class='main-header title_color'>
+                                                            <!-- ======= section text ====== -->
+                                                            <div style='line-height: 22px'>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>                                       
+                                                </table>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr><td height='30' style='font-size: 30px; line-height: 30px;'>&nbsp;</td></tr>  
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border='0' align='center' width='510' cellpadding='0' cellspacing='0' bgcolor='ffffff' class='container590 bg_color'>
+                            <tr><td height='40' style='font-size: 40px; line-height: 40px;'>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    <table border='0' align='center' width='450' cellpadding='0' cellspacing='0' class='container580 bg_color'>
+                                        <tr>
+                                            <td>                 
+                                                <table border='0' width='398' align='right' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;' class='container580'>
+                                                    <tr>
+                                                        <td align='left' style='color: #7e8385; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 24px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 24px'>
+                                                                    <b>Nombre:</b> <span>$f_volu_nombre</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 22px'>
+                                                                    <b>Edad: </b> <span>$f_volu_edad</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 22px'>
+                                                                    <b>Residencia: </b> <span>$f_volu_residencia</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 22px'>
+                                                                    <b>Gustos y pasatiempos: </b> <span>$f_volu_gastos_pasatiempos</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 22px'>
+                                                                    <b>Experiencia: </b> <span>$f_volu_experiencia</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 22px'>
+                                                                    <b>Horario: </b> <span>$f_volu_horario</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                    <tr>
+                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
+                                                            <!-- ======= section text ======= -->
+                                                            <div style='line-height: 22px'>
+                                                                    <b>Apoyo: </b> <span>$f_volu_apoyo</span>
+                                                            </div>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td height='40' style='font-size: 40px; line-height: 40px;'>&nbsp;</td></tr>
+                        </table>   
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border='0' align='center' width='510' cellpadding='0' cellspacing='0' bgcolor='f5f5f5' class='container590 bodybg_color'>
+                            <tr><td height='40' style='font-size: 40px; line-height: 40px;'>&nbsp;</td></tr>
+                            <tr>
+                                <td align='center'>
+                                    <table border='0' align='center' width='225' cellpadding='0' cellspacing='0' bgcolor='16b4ba' style='border-radius: 5px;' class='cta-btn main_color'>
+                                        <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
+                                        <tr>
+                                            <td>
+                                                <table border='0' align='center' cellpadding='0' cellspacing='0' style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+                                                    <tr>
+                                                        <td align='center' style='color: #ffffff; font-size: 16px; font-family: 'Montserrat', sans-serif;'>
+                                                            <!-- ======= main section button ======= -->
+                                                            
+                                                            <div style='line-height: 24px;'>
+                                                                <a href='mailto:$f_volu_correo?subject=Respuesta voluntarios Nupali A.C.' style='color: #ffffff; text-decoration: none;'>Responder</a> 
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>       
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td height='30' style='font-size: 30px; line-height: 30px;'>&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    <table border='0' width='460' align='center' cellpadding='0' cellspacing='0' class='container580'>
+                                        <tr>
+                                            <td align='center' style='color: #7e8385; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 30px;' class='text_color'>
+                                                <div style='line-height: 30px'>
+                                                    <!-- ======= section text ======= -->
+                                                        &copy; 2018 VOLUNTARIOS NUPALI
+                                                </div>
+                                            </td>   
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td height='40' style='font-size: 40px; line-height: 40px;'>&nbsp;</td></tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr><td height='120' style='font-size: 120px; line-height: 120px;'>&nbsp;</td></tr>
+                
+            </table>
+            <!-- ======= end header ======= -->
+            
+            
+        </body>
         </html>";
 
     $headers = "MIME-Version: 1.0" . "\r\n";
