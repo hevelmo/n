@@ -1,17 +1,12 @@
 <?php
-    $f_volu_nombre = htmlspecialchars($_POST["nombre"]);
-    $f_volu_correo = htmlspecialchars($_POST["correo"]);
-    $f_volu_edad = htmlspecialchars($_POST["edad"]);
-    $f_volu_residencia = htmlspecialchars($_POST["residencia"]);
-    $f_volu_gastos_pasatiempos = htmlspecialchars($_POST["gustos_pasatiempos"]);
-    $f_volu_experiencia = htmlspecialchars($_POST["experiencia"]);
-    $f_volu_horario = htmlspecialchars($_POST["horario"]);
-    $f_volu_apoyo = htmlspecialchars($_POST["apoyo"]);
-    $f_volu_host = htmlspecialchars($_POST["host"]);
+    $f_cont_nombre = htmlspecialchars($_POST["nombre"]);
+    $f_cont_correo = htmlspecialchars($_POST["correo"]);
+    $f_cont_mensaje = htmlspecialchars($_POST["mensaje"]);
+    $f_cont_host = htmlspecialchars($_POST["host"]);
 
-    //$to = "hevelmo060683@gmail.com";
-    $to = "contacto@nupali.org";
-    $subject = "Voluntarios Nupali";
+    $to = "hevelmo060683@gmail.com";
+    //$to = "contacto@nupali.org";
+    $subject = "Contacto Nupali";
 
     $cuerpo = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'> 
         <html xmlns:v='urn:schemas-microsoft-com:vml'>
@@ -166,7 +161,7 @@
                                                                 <tr>
                                                                     <!-- ======= logo ======= -->
                                                                     <td align='center'>
-                                                                        <b>VOLUNTARIOS</b>
+                                                                        <b>CONTACTO</b>
                                                                     </td>           
                                                                 </tr>                                                                        
                                                             </table>
@@ -213,7 +208,7 @@
                                                         <td align='left' style='color: #7e8385; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 24px;' class='text_color align-center'>
                                                             <!-- ======= section text ======= -->
                                                             <div style='line-height: 24px'>
-                                                                    <b>Nombre:</b> <span>$f_volu_nombre</span>
+                                                                    <b>Nombre:</b> <span>$f_cont_nombre</span>
                                                             </div>
                                                         </td>   
                                                     </tr>
@@ -222,52 +217,9 @@
                                                         <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
                                                             <!-- ======= section text ======= -->
                                                             <div style='line-height: 22px'>
-                                                                    <b>Edad: </b> <span>$f_volu_edad</span>
-                                                            </div>
-                                                        </td>   
-                                                    </tr>
-                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
-                                                    <tr>
-                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
-                                                            <!-- ======= section text ======= -->
-                                                            <div style='line-height: 22px'>
-                                                                    <b>Residencia: </b> <span>$f_volu_residencia</span>
-                                                            </div>
-                                                        </td>   
-                                                    </tr>
-                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
-                                                    <tr>
-                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
-                                                            <!-- ======= section text ======= -->
-                                                            <div style='line-height: 22px'>
-                                                                    <b>Gustos y pasatiempos: </b> <span>$f_volu_gastos_pasatiempos</span>
-                                                            </div>
-                                                        </td>   
-                                                    </tr>
-                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
-                                                    <tr>
-                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
-                                                            <!-- ======= section text ======= -->
-                                                            <div style='line-height: 22px'>
-                                                                    <b>Experiencia: </b> <span>$f_volu_experiencia</span>
-                                                            </div>
-                                                        </td>   
-                                                    </tr>
-                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
-                                                    <tr>
-                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
-                                                            <!-- ======= section text ======= -->
-                                                            <div style='line-height: 22px'>
-                                                                    <b>Horario: </b> <span>$f_volu_horario</span>
-                                                            </div>
-                                                        </td>   
-                                                    </tr>
-                                                    <tr><td height='15' style='font-size: 15px; line-height: 15px;'>&nbsp;</td></tr>
-                                                    <tr>
-                                                        <td align='left' style='color: #16b4ba; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 22px;' class='text_color align-center'>
-                                                            <!-- ======= section text ======= -->
-                                                            <div style='line-height: 22px'>
-                                                                    <b>Apoyo: </b> <span>$f_volu_apoyo</span>
+                                                                <p>
+                                                                    <span>$f_cont_mensaje</span>
+                                                                </p>
                                                             </div>
                                                         </td>   
                                                     </tr>
@@ -298,7 +250,7 @@
                                                             <!-- ======= main section button ======= -->
                                                             
                                                             <div style='line-height: 24px;'>
-                                                                <a href='mailto:$f_volu_correo?subject=Respuesta voluntarios Nupali A.C.' style='color: #ffffff; text-decoration: none;'>Responder</a> 
+                                                                <a href='mailto:$f_cont_correo?subject=Respuesta Contacto Nupali A.C.' style='color: #ffffff; text-decoration: none;'>Responder</a> 
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -317,7 +269,7 @@
                                             <td align='center' style='color: #7e8385; font-size: 14px; font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; line-height: 30px;' class='text_color'>
                                                 <div style='line-height: 30px'>
                                                     <!-- ======= section text ======= -->
-                                                        &copy; 2018 VOLUNTARIOS NUPALI
+                                                        &copy; 2018 CONTACTO NUPALI
                                                 </div>
                                             </td>   
                                         </tr>
@@ -341,7 +293,7 @@
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
 
-    $headers .= "From: ". $f_volu_nombre ." <". $f_volu_correo .">" . "\r\n" . "Reply-To: ". $f_volu_correo . "\r\n" . "X-Mailer: PHP/" . phpversion();
+    $headers .= "From: ". $f_cont_nombre ." <". $f_cont_correo .">" . "\r\n" . "Reply-To: ". $f_cont_correo . "\r\n" . "X-Mailer: PHP/" . phpversion();
     $success = mail($to,$subject,$cuerpo,$headers);
     if (!$success) {
         echo "\r\nMensaje no enviado. \r\n";

@@ -70,7 +70,7 @@ VOLU = (function() {
     function sendFromVoluntarios(nombre, correo, edad, residencia, gustos_pasatiempos, experiencia, horario, apoyo, host) {
         var _url, _loader;
         _url = host + "core/voluntarios/send_form_voluntarios.php";
-        _loader = $('.loader');
+        _loader = $('.loader_gif');
 
         $.ajax({
             type: "POST",
@@ -78,23 +78,51 @@ VOLU = (function() {
             data: {nombre:nombre, correo:correo, edad:edad, residencia:residencia, gustos_pasatiempos:gustos_pasatiempos, experiencia:experiencia, horario:horario, apoyo:apoyo, host: host},
             beforeSend: function() {
                 setTimeout(function(){
-                    //_loader.fadeIn(1000).html('<img src="'+ host + 'img/loader.gif">').delay(2000).fadeOut(1000);
-                }, 2000);
+                    _loader.fadeIn(500).html('<img src="'+ host + 'img/loader.gif">').delay(1000).fadeOut(500);
+                }, 1000);
             },
             success: function(data){
                 setTimeout(function(){
-                    console.log(data);
-                    //alertify.success('Tu pregunta se ha enviado');
-                }, 8000);
+                    //console.log(data);
+                    alertify.success('Tu mensaje se enviado exitosamente');
+                }, 4000);
             }
         }).done(function() {
             setTimeout(function(){
                 $("#form-voluntarios")[0].reset();
                 //$('#send_add_question').addClass('disable-button');
-            }, 9000);
+            }, 4500);
+        });
+    }
+    function sendFromContacto(nombre, correo, mensaje, host) {
+        var _url, _loader;
+        _url = host + "core/contacto/send_form_contacto.php";
+        _loader = $('.loader_gif');
+
+        $.ajax({
+            type: "POST",
+            url: _url,
+            data: {nombre:nombre, correo:correo, mensaje:mensaje, host: host},
+            beforeSend: function() {
+                setTimeout(function(){
+                    _loader.fadeIn(500).html('<img src="'+ host + 'img/loader.gif">').delay(1000).fadeOut(500);
+                }, 1000);
+            },
+            success: function(data){
+                setTimeout(function(){
+                    //console.log(data);
+                    alertify.success('Tu mensaje se enviado exitosamente');
+                }, 4000);
+            }
+        }).done(function() {
+            setTimeout(function(){
+                $("#form-contacto")[0].reset();
+                //$('#send_add_question').addClass('disable-button');
+            }, 4500);
         });
     }
     return {
+           sendFromContacto : sendFromContacto,
         sendFromVoluntarios : sendFromVoluntarios
     };
 }());
