@@ -159,6 +159,19 @@ var home = {
     onResize: function() {
         "use strict";
     }
+    /*
+    1.- artyom inicia con un alertify para inicializarla
+    2.- se abrira un slide panel
+      2.1.- muestra un formulario donde habra un input
+          el input tendra la funcion de reconocimiento de voz
+          el usuario debera decir su nombre
+          el nombre se escribira en el input
+
+          el formulario tendra la funcion de guardar con reconocimiento de voz,
+          se guardará y el reconocimiento de voz le dara la bienvenida ya con su nombre
+
+              
+    */
 }
 // [methods] -> global methods
 var browser = {
