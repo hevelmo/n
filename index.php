@@ -30,7 +30,8 @@
 	 *		[required] time zone
 	 */
 		/* */
-			require_once "core/environment/configSet.php";
+      require_once "core/environment/configSet.php";
+			//require_once "core/environment/router.php";
 		/* end -> [required] environment -> config set */
 	/*
 	 *		[Slim] view app object Slim twig

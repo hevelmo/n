@@ -64,16 +64,16 @@
 
 	        <div class="main-container" id="page">
 
-				<input type="hidden" name="section" id="section" value="{% block section %}{{ _section }}{% endblock %}">
+              <input type="hidden" name="section" id="section" value="{% block section %}{{ _section }}{% endblock %}">
 
-				{# header nav #}
-				{% block header_nav_container %}{% endblock %}
+      				{# header nav #}
+      				{% block header_nav_container %}{% endblock %}
 
-				{# Container #}
-				{% block content %}{% endblock content %}
+      				{# Container #}
+      				{% block content %}{% endblock content %}
 
-				{# footer #}
-				{% embed "assets/footer.twig" %}{% endembed %}
+      				{# footer #}
+      				{% embed "assets/footer.twig" %}{% endembed %}
 
          	</div>{# /End Main Container #}
 
@@ -100,8 +100,8 @@
 	        <script src="{{ _host }}lib/assets/plugins/venobox.js"></script>
 	        <script src="{{ _host }}lib/assets/plugins/moment.js"></script>
 	        <script src="{{ _host }}lib/assets/plugins/modal-responsive.js"></script>
-	        {#
 	        <script src="{{ _host }}lib/assets/plugins/artyom.window.js"></script>
+          {#
 	        #}
 	        <script src="{{ _host }}lib/assets/plugins/alertify.js"></script>
 	        <script src="{{ _host }}lib/assets/plugins/jquery-bxslider.js"></script>
