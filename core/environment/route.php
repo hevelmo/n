@@ -30,7 +30,7 @@ define("_CONTACTO_", _HOME_ . "contacto");
 // aviso-de-privacidad
 define("_AVISO_DE_PRIVACIDAD_", _HOME_ . "aviso-de-privacidad");
 // proximamente
-define("_PROCIMANTE_", _HOME_ . "proximamente");
+define("_PROXIMANTE_", _HOME_ . "proximamente");
 //
 /*define("", "");
 define("", "");
