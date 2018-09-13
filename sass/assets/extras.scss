@@ -5,6 +5,9 @@
     height: 0;
     overflow: hidden;
 }
+body::after {
+  content: '';
+}
 
 .iframe-container iframe {
     position: absolute;

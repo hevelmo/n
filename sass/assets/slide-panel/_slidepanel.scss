@@ -18,6 +18,7 @@
 
 	&:after {
 		/* overlay layer */
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -125,6 +126,7 @@
 
 	&:before, &:after {
 		/* close icon created in CSS */
+		content: '';
 		position: absolute;
 		top: 22px;
 		left: 20px;
