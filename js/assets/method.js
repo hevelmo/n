@@ -19,12 +19,14 @@ var GLOBAL, VOLU;
 var  alertify;
 var google, map;
 var inc;
+var artyom, bienvenida;
+var _slide_panel_content, _slide_panel_header, _slide_panel_container;
 inc = 'nav__inc_';
 //
 GLOBAL = {};
 VOLU = {};
 //
-_host = GHIA.getValue('#_host');
+_host = NUPALI.getValue('#_host');
 //
 _element = $(this);
 //
@@ -65,14 +67,36 @@ var global = {
     },
     build: function() {
         "use strict";
-        // console.log('Global');
+        //console.log('Global');
+        this.onLoad();
         this.onReady();
-        this.osScroll();
+        this.onScroll();
         this.onResize();
+    },
+    onLoad: function() {
+      "use strict";
+      $(window).on('load', function(){
+          alertify.alert("Bienvenido", "Activar identificador de voz.", function(){
+              GLOBAL.startArtyom();
+              setTimeout(function(){
+                  bienvenida = "El identificador de voz se há activado, pronuncia tu nombre.";
+                  artyom.say(bienvenida);
+              }, 2400);
+          });
+      });
     },
     onReady: function() {
         "use strict";
         $(document).ready(function(){
+            //open the lateral panel
+            $('.cd-btn').on('click', function(event){
+                  event.preventDefault();
+                  GLOBAL.openSlidePanel();
+            });
+            //clode the lateral panel
+            $('.cd-panel').on('click', function(event){
+                  //GLOBAL.closeSlidePanel();
+            });
         });
     },
     onScroll: function() {
@@ -85,20 +109,95 @@ var global = {
 GLOBAL = (function() {
     "use strict";
     function startArtyom() {
-        artyom.initialize({
-  				lang: "es-ES",
-  				continuous:true,// Reconoce 1 solo comando y para de escuchar
-  	            listen:true, // Iniciar !
-  	            debug:true, // Muestra un informe en la consola
-  	            speed:1 // Habla normalmente
-  			});
+        setTimeout(function(){
+            GLOBAL.loader();
+        }, 1500);
+        GLOBAL.createSlidePanel();
+        setTimeout(function(){
+            artyom.initialize({
+      				lang: "es-ES",
+      				continuous:true,// Reconoce 1 solo comando y para de escuchar
+      	            listen:true, // Iniciar !
+      	            debug:false, // Muestra un informe en la consola
+      	            speed:1 // Habla normalmente
+      			});
+            setTimeout(function(){
+                GLOBAL.openSlidePanel();
+            }, 2200);
+        }, 2300);
     }
     function stopArtyom() {
         artyom.fatality();
     }
+    function createSlidePanel() {
+      var _slide_panel_title, _slide_panel_button_close;
+        _slide_panel_content = {'class': 'cd-panel from-right', 'id': 'this-panel'};
+        NUPALI.prependOne('body', 'div', _slide_panel_content, '', 1);
+
+        _slide_panel_header = [
+            ['div', {'class':'cd-panel-container', 'id':'this-container'}, '', 1],
+            ['header', {'class':'cd-panel-header', 'id':'this-header'}, '', 1]
+        ];
+        NUPALI.prependMulti('#this-panel', _slide_panel_header);
+
+        _slide_panel_title = [
+            ['a', {'class': 'cd-panel-close', 'href': '#0'}, 'Cerrar', 1],
+            ['h5', {}, 'Identificador de voz', 1]
+        ];
+        NUPALI.prependMulti('#this-header', _slide_panel_title);
+        //_slide_panel_header = [];
+    }
+    function openSlidePanel() {
+        $('.cd-panel').addClass('is-visible');
+    }
+    function closeSlidePanel() {
+        if( $(event.target).is('.cd-panel') || $(event.target).is('.cd-panel-close') ) {
+    			$('.cd-panel').removeClass('is-visible');
+    			event.preventDefault();
+    		}
+    }
+    function loaderIn() {
+        var _container, _spinner;
+        _container = '<div class="panel_frame"/>';
+        _spinner = '<div class="spinner">'+
+        '<div class="double-bounce1"></div>'+
+        '<div class="double-bounce2"></div>'
+        '</div>';
+        GLOBAL.simpleAppend('body', _container);
+        GLOBAL.setHTML('.panel_frame', _spinner);
+    }
+    function loaderOut() {
+        GLOBAL.removeHTML('.panel_frame');
+    }
+    function loader() {
+        setTimeout(function(){
+            GLOBAL.loaderIn();
+            setTimeout(function(){
+                GLOBAL.loaderOut();
+            }, 1500);
+        }, 0);
+    }
+    function simpleAppend(domElement, content) {
+        return $(domElement).append(content);
+    }
+    function setHTML(domElement, content) {
+        return $(domElement).html(content);
+    }
+    function removeHTML(domElement) {
+        return $(domElement).fadeOut().remove();
+    }
     return {
-             stopArtyom : stopArtyom,
-            startArtyom : startArtyom
+                    loader : loader,
+                   setHTML : setHTML,
+                  loaderIn : loaderIn,
+                 loaderOut : loaderOut,
+                removeHTML : removeHTML,
+                stopArtyom : stopArtyom,
+               startArtyom : startArtyom,
+              simpleAppend : simpleAppend,
+            openSlidePanel : openSlidePanel,
+           closeSlidePanel : closeSlidePanel,
+          createSlidePanel : createSlidePanel
     };
 }());
 // [init] initilize sections
@@ -116,7 +215,7 @@ var sections = {
     },
     build: function(section) {
         "use strict";
-        console.log(section);
+        //console.log(section);
         this.events(section);
     },
     events: function(section) {
@@ -143,9 +242,10 @@ var home = {
     },
     build: function() {
         "use strict";
-        // console.log('Global');
+        //console.log('Home');
+        global.initialize();
         this.onReady();
-        this.osScroll();
+        this.onScroll();
         this.onResize();
     },
     onReady: function() {
@@ -170,9 +270,10 @@ var home = {
           el formulario tendra la funcion de guardar con reconocimiento de voz,
           se guardará y el reconocimiento de voz le dara la bienvenida ya con su nombre
 
-              
+
     */
 }
+
 // [methods] -> global methods
 var browser = {
     init: function() {
@@ -290,51 +391,9 @@ var mobile_detected = {
     }
 };
 
-/*
- *  [method] artyom
- */
-    /* */
-        var artyom = {
-            initialized: false,
-            initialize: function() {
-                if ( this.initialized ) return;
-                this.initialized = true;
-                this.build;
-            },
-            build: function() {
-                this._init();
-            },
-            _init: function() {
-                this.artyom();
-            },
-            artyom: function() {
-            },
-            artyom_initialize: function() {
-                window.artyom = new Artyom();
-                artyom.initialize({
-                    continuous: false,
-                    lang: "es-ES",
-                    obeyKeyword: "ashtacrackboombang",
-                    listen: false,
-                    debug: true
-                });
-                getData('imagen');
-                getData('inicio');
-                function getData(element) {
-                    $( '.' + $inc + 'element' ).mouseenter(function() {
-                        el = '.' + $inc + 'element';
-                        el_class = $(el).data('inclusion');
+var section = NUPALI.getValue('#section');
+sections.initialize(section);
 
-                        artyom.say(el_class);
-                        console.log(el_class);
-                        alertify.notify(el_class);
-                    });
-                }
-            }
-        }
-
-    /* */
-/* end -> [method] artyom */
 VOLU = (function() {
     "use strict";
     function sendFromVoluntarios(nombre, correo, edad, residencia, gustos_pasatiempos, experiencia, horario, apoyo, host) {

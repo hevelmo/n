@@ -17,44 +17,44 @@ $(window).on('load', function() {
     $(".loader").fadeOut("slow");
 
     /*
-    */
     var $inc;
     $inc = 'nav__inc_';
     window.artyom  = new Artyom();
     artyom.initialize({
-      continuous: false,
-      lang: "es-ES",
-      obeyKeyword: "ashtacrackboombang",
-      listen: false,
-      debug: true
-    });
+    continuous: false,
+    lang: "es-ES",
+    obeyKeyword: "ashtacrackboombang",
+    listen: false,
+    debug: true
+  });
 
-    $(window).on('load', function() {
-    });
-    $('html').one('mouseenter', '.nupali', function() {
-      getData('.nupali');
-    });
-    getData('image');
-    getData('inicio');
-    function getData(element) {
-      $( '.' + $inc + element ).mouseenter(function() {
-        el = '.' + $inc + element;
-        el_class = $(el).data('inclusion');
+  $(window).on('load', function() {
+});
+$('html').one('mouseenter', '.nupali', function() {
+getData('.nupali');
+});
+getData('image');
+getData('inicio');
+function getData(element) {
+$( '.' + $inc + element ).mouseenter(function() {
+el = '.' + $inc + element;
+el_class = $(el).data('inclusion');
 
-        artyom.say(el_class);
-        console.log(el_class);
-        alertify.notify(el_class);
-      });
-    }
-    $('html').one('mouseenter', '.nupali', function() {
-      console.log("artyom say");
-      var el = 'body.nupali';
-      var el_class = $(el).data('inclusion');
+artyom.say(el_class);
+console.log(el_class);
+alertify.notify(el_class);
+});
+}
+$('html').one('mouseenter', '.nupali', function() {
+console.log("artyom say");
+var el = 'body.nupali';
+var el_class = $(el).data('inclusion');
 
-      artyom.say(el_class);
-      console.log(el_class);
-      alertify.notify(el_class);
-    });
+artyom.say(el_class);
+console.log(el_class);
+alertify.notify(el_class);
+});
+    */
 });
 
 

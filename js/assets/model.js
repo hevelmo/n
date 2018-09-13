@@ -54,8 +54,8 @@
         [function] randomString(name)
     [models] Returning all Models
 **/
-var GHIA = {};
-GHIA = (function() {
+var NUPALI = {};
+NUPALI = (function() {
     var $this = this;
     /*
      *  [models] Moment Español
