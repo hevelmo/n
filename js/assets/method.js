@@ -82,6 +82,9 @@ var global = {
                   bienvenida = "El identificador de voz se há activado, pronuncia tu nombre.";
                   artyom.say(bienvenida);
               }, 2400);
+              global.loadTemplate__enterVoice();
+              // Escribir lo que escucha.
+
           });
       });
     },
@@ -104,6 +107,16 @@ var global = {
     },
     onResize: function() {
         "use strict";
+    },
+    loadTemplate__enterVoice: function() {
+        NUPALI.loadTemplate(tempsNames.form_voice_enter, domEl.box_panel_container);
+        artyom.redirectRecognizedTextOutput(function(text,isFinal){
+            var texto = $('#salida');
+            if (isFinal) {
+                texto.val(text);
+            } else {
+            }
+        });
     }
 }
 GLOBAL = (function() {
