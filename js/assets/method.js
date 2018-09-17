@@ -72,6 +72,15 @@ var global = {
         this.onReady();
         this.onScroll();
         this.onResize();
+        artyom.redirectRecognizedTextOutput(function(text,isFinal){
+            console.log("esta escuchando");
+
+            var texto = $('#salida');
+            if (isFinal) {
+                texto.val(text);
+            } else {
+            }
+        });
     },
     onLoad: function() {
       "use strict";
@@ -100,6 +109,7 @@ var global = {
             $('.cd-panel').on('click', function(event){
                   //GLOBAL.closeSlidePanel();
             });
+
         });
     },
     onScroll: function() {
@@ -110,13 +120,7 @@ var global = {
     },
     loadTemplate__enterVoice: function() {
         NUPALI.loadTemplate(tempsNames.form_voice_enter, domEl.box_panel_container);
-        artyom.redirectRecognizedTextOutput(function(text,isFinal){
-            var texto = $('#salida');
-            if (isFinal) {
-                texto.val(text);
-            } else {
-            }
-        });
+
     }
 }
 GLOBAL = (function() {
