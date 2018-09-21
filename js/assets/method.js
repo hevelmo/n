@@ -84,8 +84,6 @@ var global = {
                   artyom.say(bienvenida);
               }, 2400);
               global.loadTemplate__enterVoice();
-              // Escribir lo que escucha.
-
           });
       });
     },
@@ -112,7 +110,16 @@ var global = {
     },
     loadTemplate__enterVoice: function() {
         NUPALI.loadTemplate(tempsNames.form_voice_enter, domEl.box_panel_container);
-
+    },
+    add_voice_name: function() {
+        artyom.redirectRecognizedTextOutput(function(text,isFinal){
+              console.log("esta escuchando");
+              var texto = $('#salida');
+              if (isFinal) {
+                  texto.val(text);
+              } else {
+              }
+        });
     }
 }
 GLOBAL = (function() {
