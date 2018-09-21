@@ -1,0 +1,256 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'handlebars' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'handlebars', null ]
+7 verbose cache add spec handlebars
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'handlebars',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'handlebars',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed handlebars@*
+10 verbose addNamed "*" is a valid semver range for handlebars
+11 silly addNameRange { name: 'handlebars', range: '*', hasData: false }
+12 silly mapToRegistry name handlebars
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/handlebars
+16 verbose addNameRange registry:https://registry.npmjs.org/handlebars not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/handlebars
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:43:57 PM
+20 verbose request id 2fe7f8d38ca3983c
+21 verbose etag "D5C1D00VQK3HIMT0WQN5B0KY3"
+22 http request GET https://registry.npmjs.org/handlebars
+23 http 200 https://registry.npmjs.org/handlebars
+24 verbose headers { date: 'Fri, 21 Sep 2018 02:43:57 GMT',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'transfer-encoding': 'chunked',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'set-cookie': [ '__cfduid=d58790bb4d459d254fbd73195f1e4f8151537497837; expires=Sat, 21-Sep-19 02:43:57 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+24 verbose headers   'cf-cache-status': 'HIT',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'cf-ray': '45d92fed98f7993d-LAX',
+24 verbose headers   etag: 'W/"0ac95e81faaf90d124e519d2cc733013"',
+24 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 verbose headers   'last-modified': 'Tue, 04 Sep 2018 18:46:13 GMT',
+24 verbose headers   vary: 'accept-encoding, accept',
+24 verbose headers   'x-amz-meta-rev': '297-fdfa16e0085e660b7b51bd4171361f22',
+24 verbose headers   server: 'cloudflare',
+24 verbose headers   'content-encoding': 'gzip' }
+25 silly get cb [ 200,
+25 silly get   { date: 'Fri, 21 Sep 2018 02:43:57 GMT',
+25 silly get     'content-type': 'application/json',
+25 silly get     'transfer-encoding': 'chunked',
+25 silly get     connection: 'keep-alive',
+25 silly get     'set-cookie': [ '__cfduid=d58790bb4d459d254fbd73195f1e4f8151537497837; expires=Sat, 21-Sep-19 02:43:57 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+25 silly get     'cf-cache-status': 'HIT',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'cf-ray': '45d92fed98f7993d-LAX',
+25 silly get     etag: 'W/"0ac95e81faaf90d124e519d2cc733013"',
+25 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+25 silly get     'last-modified': 'Tue, 04 Sep 2018 18:46:13 GMT',
+25 silly get     vary: 'accept-encoding, accept',
+25 silly get     'x-amz-meta-rev': '297-fdfa16e0085e660b7b51bd4171361f22',
+25 silly get     server: 'cloudflare',
+25 silly get     'content-encoding': 'gzip' } ]
+26 verbose get saving handlebars to /Users/hevelmo/.npm/registry.npmjs.org/handlebars/.cache.json
+27 silly addNameRange number 2 { name: 'handlebars', range: '*', hasData: true }
+28 silly addNameRange versions [ 'handlebars',
+28 silly addNameRange   [ '1.0.6',
+28 silly addNameRange     '1.0.6-2',
+28 silly addNameRange     '1.0.7',
+28 silly addNameRange     '1.0.8',
+28 silly addNameRange     '1.0.9',
+28 silly addNameRange     '1.0.10',
+28 silly addNameRange     '1.0.11',
+28 silly addNameRange     '1.0.12',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '2.0.0-alpha.1',
+28 silly addNameRange     '2.0.0-alpha.2',
+28 silly addNameRange     '2.0.0-alpha.3',
+28 silly addNameRange     '2.0.0-alpha.4',
+28 silly addNameRange     '2.0.0-beta.1',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '3.0.0',
+28 silly addNameRange     '3.0.1',
+28 silly addNameRange     '3.0.2',
+28 silly addNameRange     '3.0.3',
+28 silly addNameRange     '4.0.0',
+28 silly addNameRange     '4.0.1',
+28 silly addNameRange     '4.0.2',
+28 silly addNameRange     '4.0.3',
+28 silly addNameRange     '4.0.4',
+28 silly addNameRange     '4.0.5',
+28 silly addNameRange     '4.0.6',
+28 silly addNameRange     '4.0.7',
+28 silly addNameRange     '4.0.8',
+28 silly addNameRange     '4.0.9',
+28 silly addNameRange     '4.0.10',
+28 silly addNameRange     '4.0.11',
+28 silly addNameRange     '1.0.2-beta',
+28 silly addNameRange     '1.0.4-beta',
+28 silly addNameRange     '1.0.5-beta',
+28 silly addNameRange     '4.0.12' ] ]
+29 silly addNamed handlebars@4.0.12
+30 verbose addNamed "4.0.12" is a plain semver version for handlebars
+31 silly mapToRegistry name handlebars
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/handlebars
+35 verbose addRemoteTarball https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz',
+36 verbose addRemoteTarball   '2c15c8a96d46da5e266700518ba8cb8d919d5bc5' ]
+37 info retry fetch attempt 1 at 9:43:57 PM
+38 info attempt registry request try #1 at 9:43:57 PM
+39 http fetch GET https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz
+40 http fetch 200 https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz
+41 silly fetchAndShaCheck shasum 2c15c8a96d46da5e266700518ba8cb8d919d5bc5
+42 verbose addTmpTarball /var/folders/6_/7vnblfs57yggw2qv4y7f8cbh0000gn/T/npm-2169-ad469d5b/registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for handlebars@4.0.12
+44 silly cache afterAdd handlebars@4.0.12
+45 verbose afterAdd /Users/hevelmo/.npm/handlebars/4.0.12/package/package.json not in flight; writing
+46 verbose afterAdd /Users/hevelmo/.npm/handlebars/4.0.12/package/package.json written
+47 silly install resolved [ { name: 'handlebars',
+47 silly install resolved     barename: 'handlebars',
+47 silly install resolved     version: '4.0.12',
+47 silly install resolved     description: 'Handlebars provides the power necessary to let you build semantic templates effectively with no frustration',
+47 silly install resolved     homepage: 'http://www.handlebarsjs.com/',
+47 silly install resolved     keywords: [ 'handlebars', 'mustache', 'template', 'html' ],
+47 silly install resolved     repository:
+47 silly install resolved      { type: 'git',
+47 silly install resolved        url: 'git+https://github.com/wycats/handlebars.js.git' },
+47 silly install resolved     author: { name: 'Yehuda Katz' },
+47 silly install resolved     license: 'MIT',
+47 silly install resolved     engines: { node: '>=0.4.7' },
+47 silly install resolved     dependencies:
+47 silly install resolved      { async: '^2.5.0',
+47 silly install resolved        optimist: '^0.6.1',
+47 silly install resolved        'source-map': '^0.6.1',
+47 silly install resolved        'uglify-js': '^3.1.4' },
+47 silly install resolved     optionalDependencies: { 'uglify-js': '^3.1.4' },
+47 silly install resolved     devDependencies:
+47 silly install resolved      { 'aws-sdk': '^2.1.49',
+47 silly install resolved        'babel-loader': '^5.0.0',
+47 silly install resolved        'babel-runtime': '^5.1.10',
+47 silly install resolved        benchmark: '~1.0',
+47 silly install resolved        'dustjs-linkedin': '^2.0.2',
+47 silly install resolved        eco: '~1.1.0-rc-3',
+47 silly install resolved        grunt: '^1.0.3',
+47 silly install resolved        'grunt-babel': '^5.0.0',
+47 silly install resolved        'grunt-cli': '^1',
+47 silly install resolved        'grunt-contrib-clean': '^1',
+47 silly install resolved        'grunt-contrib-concat': '^1',
+47 silly install resolved        'grunt-contrib-connect': '^1',
+47 silly install resolved        'grunt-contrib-copy': '^1',
+47 silly install resolved        'grunt-contrib-requirejs': '^1',
+47 silly install resolved        'grunt-contrib-uglify': '^1',
+47 silly install resolved        'grunt-contrib-watch': '^1.1.0',
+47 silly install resolved        'grunt-eslint': '^20.1.0',
+47 silly install resolved        'grunt-saucelabs': '8.x',
+47 silly install resolved        'grunt-webpack': '^1.0.8',
+47 silly install resolved        istanbul: '^0.3.0',
+47 silly install resolved        jison: '~0.3.0',
+47 silly install resolved        mocha: '^5',
+47 silly install resolved        'mock-stdin': '^0.3.0',
+47 silly install resolved        mustache: '^2.1.3',
+47 silly install resolved        semver: '^5.0.1',
+47 silly install resolved        underscore: '^1.5.1',
+47 silly install resolved        webpack: '^1.12.6',
+47 silly install resolved        'webpack-dev-server': '^1.12.1' },
+47 silly install resolved     main: 'lib/index.js',
+47 silly install resolved     bin: { handlebars: 'bin/handlebars' },
+47 silly install resolved     scripts: { test: 'grunt' },
+47 silly install resolved     jspm:
+47 silly install resolved      { main: 'handlebars',
+47 silly install resolved        directories: [Object],
+47 silly install resolved        buildConfig: [Object] },
+47 silly install resolved     gitHead: '8d22e6f501dc0720fe0610bb4dab60cae18e7d20',
+47 silly install resolved     bugs: { url: 'https://github.com/wycats/handlebars.js/issues' },
+47 silly install resolved     _id: 'handlebars@4.0.12',
+47 silly install resolved     _npmVersion: '5.6.0',
+47 silly install resolved     _nodeVersion: '8.11.4',
+47 silly install resolved     _npmUser: { name: 'knappi', email: 'npm@knappi.org' },
+47 silly install resolved     dist:
+47 silly install resolved      { integrity: 'sha512-RhmTekP+FZL+XNhwS1Wf+bTTZpdLougwt5pcgA1tuz6Jcx0fpH/7z0qd71RKnZHBCxIRBHfBOnio4gViPemNzA==',
+47 silly install resolved        shasum: '2c15c8a96d46da5e266700518ba8cb8d919d5bc5',
+47 silly install resolved        tarball: 'https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz',
+47 silly install resolved        fileCount: 106,
+47 silly install resolved        unpackedSize: 2499351,
+47 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbjtLxCRA9TVsSAnZWagAA1scP/A9NGn60kzghGxS5yH+p\ntp3p6PfG8WAWuuNBLUyRjeonSJYOE9z0cs8+mki6fm1ugROBnQxO2thKfSG2\nxQBZ4C7khiiVZRciOmNcpXSStQKBFchVsaOPTn36QKYAPAoQFG/rqpKaowmk\neHZmPXkUpKW1pBM+Rg9CadT6o6n1u5ColyJc2RYGdsKCejy1utaCJmxMOXxN\nM47H1Cdr7mKgZyShI8GY8Y9JiyjAqTQ8UTBFddmvYNzV/kTEF36RpCXwXhVc\n0uXVjIo89DliU5zFjIiPMVn9KN+FxY1MzplFxfA3EAElvw3+S3HLtlGc5XyI\ncNTeHVbDeHQuYYBLWxoIGha+NPCSswHgnIv9i8VTbRM9BS+FHl59Yw4fjwEA\nGDcR7Sp9Ws0RmXIc5o4+X2unSi5EfZ97KnOCw+pSdprQc5S+lmgLlDDgUFRe\nvA7YzQbct46K4YhR3eOJYwaaDlX/xi2txlQTJG/Gtqygqfntz4NdVEaLEifJ\nMio8Sg0zUWX6mpaw3E7+TYaXoUTu8IBrr8Lq+2oCUuInd5RLADoOrVHQZ5mt\n5WtpP6vqpDX54aQkKLAAF4MWLWGd1QSQm5pJn+P6DBkvw5IjDhCyM8CIEH59\nS+sxDSQGHLhNlAvzXt8cTLrzgfbHO7uj1o2v3kOJAZUcUYH8VdcyyhB3+9OP\nBdM9\r\n=7wHQ\r\n-----END PGP SIGNATURE-----\r\n' },
+47 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+47 silly install resolved     directories: {},
+47 silly install resolved     _npmOperationalInternal:
+47 silly install resolved      { host: 's3://npm-registry-packages',
+47 silly install resolved        tmp: 'tmp/handlebars_4.0.12_1536086768813_0.30534031867390765' },
+47 silly install resolved     _hasShrinkwrap: false,
+47 silly install resolved     _shasum: '2c15c8a96d46da5e266700518ba8cb8d919d5bc5',
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz',
+47 silly install resolved     _from: 'handlebars@*' } ]
+48 info install handlebars@4.0.12 into /usr/local/lib
+49 info installOne handlebars@4.0.12
+50 verbose installOne of handlebars to /usr/local/lib not in flight; installing
+51 verbose lock using /Users/hevelmo/.npm/_locks/handlebars-7aff9bd5423d3e89.lock for /usr/local/lib/node_modules/handlebars
+52 silly install write writing handlebars 4.0.12 to /usr/local/lib/node_modules/handlebars
+53 verbose unbuild lib/node_modules/handlebars
+54 info preuninstall handlebars@4.0.5
+55 info uninstall handlebars@4.0.5
+56 verbose unbuild rmStuff handlebars@4.0.5 from /usr/local/lib/node_modules
+57 silly gentlyRm /usr/local/bin/handlebars is being gently removed
+58 silly gentlyRm verifying /usr/local is an npm working directory
+59 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+60 silly gentlyRm deletion target /usr/local/bin/handlebars is under /usr/local
+61 verbose gentlyRm vacuuming from /usr/local/bin/handlebars up to /usr/local
+62 silly vacuum-fs removing /usr/local/bin/handlebars
+63 verbose unlock done using /Users/hevelmo/.npm/_locks/handlebars-7aff9bd5423d3e89.lock for /usr/local/lib/node_modules/handlebars
+64 verbose stack Error: EACCES: permission denied, unlink '/usr/local/bin/handlebars'
+64 verbose stack     at Error (native)
+65 verbose cwd /Applications/MAMP/htdocs/n/templates
+66 error Darwin 17.4.0
+67 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "handlebars"
+68 error node v4.2.2
+69 error npm  v2.14.7
+70 error path /usr/local/bin/handlebars
+71 error code EACCES
+72 error errno -13
+73 error syscall unlink
+74 error Error: EACCES: permission denied, unlink '/usr/local/bin/handlebars'
+74 error     at Error (native)
+74 error  { [Error: EACCES: permission denied, unlink '/usr/local/bin/handlebars']
+74 error   errno: -13,
+74 error   code: 'EACCES',
+74 error   syscall: 'unlink',
+74 error   path: '/usr/local/bin/handlebars' }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ -13, true ]
+77 verbose unbuild lib/node_modules/handlebars
+78 info preuninstall handlebars@4.0.5
+79 info uninstall handlebars@4.0.5
+80 verbose unbuild rmStuff handlebars@4.0.5 from /usr/local/lib/node_modules
+81 silly gentlyRm /usr/local/bin/handlebars is being gently removed
+82 silly gentlyRm verifying /usr/local is an npm working directory
+83 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+84 silly gentlyRm deletion target /usr/local/bin/handlebars is under /usr/local
+85 verbose gentlyRm vacuuming from /usr/local/bin/handlebars up to /usr/local
+86 silly vacuum-fs removing /usr/local/bin/handlebars
+87 error error rolling back Error: EACCES: permission denied, unlink '/usr/local/bin/handlebars'
+87 error error rolling back     at Error (native)
+87 error error rolling back  { [Error: EACCES: permission denied, unlink '/usr/local/bin/handlebars']
+87 error error rolling back   errno: -13,
+87 error error rolling back   code: 'EACCES',
+87 error error rolling back   syscall: 'unlink',
+87 error error rolling back   path: '/usr/local/bin/handlebars' }

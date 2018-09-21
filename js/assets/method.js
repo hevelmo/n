@@ -72,15 +72,7 @@ var global = {
         this.onReady();
         this.onScroll();
         this.onResize();
-        artyom.redirectRecognizedTextOutput(function(text,isFinal){
-            console.log("esta escuchando");
 
-            var texto = $('#salida');
-            if (isFinal) {
-                texto.val(text);
-            } else {
-            }
-        });
     },
     onLoad: function() {
       "use strict";
