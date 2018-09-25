@@ -68,11 +68,20 @@ var global = {
     build: function() {
         "use strict";
         //console.log('Global');
+        this.events();
         this.onLoad();
         this.onReady();
         this.onScroll();
         this.onResize();
 
+    },
+    events: function() {
+        "use strict";
+        global.add_voice_name();
+        $(document).ready(function(){
+          console.log("entra autofocus?");
+
+        });
     },
     onLoad: function() {
       "use strict";
@@ -80,7 +89,7 @@ var global = {
           alertify.alert("Bienvenido", "Activar identificador de voz.", function(){
               GLOBAL.startArtyom();
               setTimeout(function(){
-                  bienvenida = "El identificador de voz se há activado, pronuncia tu nombre.";
+                  bienvenida = "El identificador de voz se a activado, pronuncia tu nombre y despues pronuncia guardar.";
                   artyom.say(bienvenida);
               }, 2400);
               global.loadTemplate__enterVoice();
@@ -110,6 +119,7 @@ var global = {
     },
     loadTemplate__enterVoice: function() {
         NUPALI.loadTemplate(tempsNames.form_voice_enter, domEl.box_panel_container);
+        $("#get-voice div div .form-group input[name='salida']#salida").focus();
     },
     add_voice_name: function() {
         artyom.redirectRecognizedTextOutput(function(text,isFinal){
@@ -131,7 +141,7 @@ GLOBAL = (function() {
         GLOBAL.createSlidePanel();
         setTimeout(function(){
             artyom.initialize({
-      				lang: "es-ES",
+      				lang: "es_MX",
       				continuous:true,// Reconoce 1 solo comando y para de escuchar
       	            listen:true, // Iniciar !
       	            debug:false, // Muestra un informe en la consola
